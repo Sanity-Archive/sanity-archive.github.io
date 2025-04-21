@@ -1,5 +1,13 @@
 [
   {
+    "title": "Guide&#58; Interactive Shells",
+    "url": "/posts/Interactive-Shell-Guide/",
+    "categories": "Blogging, Guide",
+    "tags": "reverse-shell, guide, quick-guide",
+    "date": "2025-04-20 13:00:00 +0200",
+    "content": "This guide explains what an interactive shell is and how you can get it running."
+  },
+  {
     "title": "HackTheBox - Shocker",
     "url": "/posts/Hack-The-Box-Shocker/",
     "categories": "Blogging, Writeup",

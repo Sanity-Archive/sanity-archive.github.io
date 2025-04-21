@@ -4,7 +4,7 @@
   <id>https://sanity-archive.github.io/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-04-20T18:07:13+02:00</updated>
+  <updated>2025-04-21T12:28:54+02:00</updated>
   <author>
     <name>S4nity</name>
     <uri>https://sanity-archive.github.io/</uri>
@@ -20,11 +20,37 @@
 
   
   <entry>
+    <title>Guide&amp;#58; Interactive Shells</title>
+    <link href="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" rel="alternate" type="text/html" title="Guide&amp;amp;#58; Interactive Shells" />
+    <published>2025-04-20T13:00:00+02:00</published>
+  
+    <updated>2025-04-20T13:00:00+02:00</updated>
+  
+    <id>https://sanity-archive.github.io/posts/Interactive-Shell-Guide/</id>
+    <content type="text/html" src="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" />
+    <author>
+      <name>sanity</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Guide" />
+    
+  
+
+  <summary>This guide explains what an interactive shell is and how you can get it running.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>HackTheBox - Shocker</title>
     <link href="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
     <published>2025-04-19T13:00:00+02:00</published>
   
-    <updated>2025-04-20T12:11:57+02:00</updated>
+    <updated>2025-04-19T13:00:00+02:00</updated>
   
     <id>https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/</id>
     <content type="text/html" src="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" />

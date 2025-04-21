@@ -30,23 +30,26 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Sanity-Archive" />
+<meta property="og:title" content="Guide: Interactive Shells" />
+<meta name="author" content="S4nity" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress." />
-<meta property="og:description" content="Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress." />
-<link rel="canonical" href="https://sanity-archive.github.io/" />
-<meta property="og:url" content="https://sanity-archive.github.io/" />
+<meta name="description" content="This guide explains what an interactive shell is and how you can get it running." />
+<meta property="og:description" content="This guide explains what an interactive shell is and how you can get it running." />
+<link rel="canonical" href="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" />
+<meta property="og:url" content="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" />
 <meta property="og:site_name" content="Sanity-Archive" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-20T13:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Sanity-Archive" />
+<meta property="twitter:title" content="Guide: Interactive Shells" />
 <meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.","headline":"Sanity-Archive","name":"S4nity","sameAs":["https://github.com/Sanity-Archive"],"url":"https://sanity-archive.github.io/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-04-20T13:00:00+02:00","datePublished":"2025-04-20T13:00:00+02:00","description":"This guide explains what an interactive shell is and how you can get it running.","headline":"Guide: Interactive Shells","mainEntityOfPage":{"@type":"WebPage","@id":"https://sanity-archive.github.io/posts/Interactive-Shell-Guide/"},"url":"https://sanity-archive.github.io/posts/Interactive-Shell-Guide/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Sanity-Archive
+  <title>Guide&#58; Interactive Shells | Sanity-Archive
   </title>
 
   <!--
@@ -110,11 +113,16 @@
   <!-- 3rd-party Dependencies -->
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css">
+  
 
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
   
 
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- Scripts -->
@@ -133,6 +141,9 @@
   
 
   
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
 
 
@@ -190,9 +201,30 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -200,11 +232,15 @@
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 
@@ -230,7 +266,7 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a href="/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
@@ -394,9 +430,23 @@
       
 
       
-        <!-- index page -->
-        <span>Home</span>
+        
+          
+            <span>
+              <a href="/">Home</a>
+            </span>
 
+          
+        
+          
+        
+          
+            
+              <span>Guide&#58; Interactive Shells</span>
+            
+
+          
+        
       
     </nav>
     <!-- endof #breadcrumb -->
@@ -406,7 +456,7 @@
     </button>
 
     <div id="topbar-title">
-      Sanity-Archive
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
@@ -460,75 +510,6 @@
 
 
 
-  
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
 
 <!-- Add header for code snippets -->
 
@@ -544,10 +525,118 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -573,40 +662,19 @@
 
 
 
-<!-- Get pinned posts on current page -->
 
+<article class="px-1" data-toc="true">
+  <header>
+    <h1 data-toc-skip>Guide&#58; Interactive Shells</h1>
+    
+      <p class="post-desc fw-light mb-4">This guide explains what an interactive shell is and how you can get it running.</p>
+    
 
-
-
-
-
-<!-- Get normal posts on current page -->
-
-
-
-
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
-  
-    <article class="card-wrapper card">
-      <a href="/posts/Interactive-Shell-Guide/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Guide&#58; Interactive Shells</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>This guide explains what an interactive shell is and how you can get it running.</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -619,106 +687,274 @@
   data-ts="1745146800"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
   Apr 20, 2025
 </time>
 
+      </span>
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging,
-                      Guide
-                  </span>
-                
-              </div>
+      <!-- lastmod date -->
+      
 
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
               
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/Hack-The-Box-Shocker/" class="post-preview row g-0 flex-md-row-reverse">
-        
+                <a href="https://sanity-archive.github.io/">S4nity</a>
+                
+              
+            
+          </em>
+        </span>
 
-        
-          
+        <div>
+          <!-- pageviews -->
           
 
-          
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
 
-          
 
-          
 
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">HackTheBox - Shocker</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+<!-- words per minute -->
 
 
 
 
-<time
-  
-  data-ts="1745060400"
-  data-df="ll"
-  
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="397 words"
 >
-  Apr 19, 2025
-</time>
+  <em>2 min</em> read</span>
 
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging,
-                      Writeup
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
         </div>
-      </a>
-    </article>
+      </div>
+    </div>
+  </header>
+
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Guide&#58; Interactive Shells</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Guide&#58; Interactive Shells</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
+
+  <div class="content">
+    <h2 id="what-is-an-interactive-shell"><span class="me-2">What is an interactive shell?</span><a href="#what-is-an-interactive-shell" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>It is a type of remote shell where the attacker gains full control over the target’s CLI (Command Line Interface), making the shell behave like a local terminal.<br />
+A good comparison is SSH vs. a regular reverse shell: in SSH, you can cancel commands by pressing [CTRL] + [C]. Doing that in a reverse shell stops netcat (or your listener), which closes the connection.</p>
+<h2 id="why-is-it-important"><span class="me-2">Why is it important?</span><a href="#why-is-it-important" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Interactive shells allow interactions that would not be possible with a regular remote shell.<br />
+Some functionality of an interactive shell:</p>
+<ul>
+  <li>stopping commands via [CTRL] + [C]</li>
+  <li>using text editors like VIM or Nano</li>
+  <li>tab completion when navigating thru the system</li>
+  <li>using the arrow keys when editing commands</li>
+  <li>and more</li>
+</ul>
+
+<h2 id="how-can-i-set-it-up"><span class="me-2">How can I set it up?</span><a href="#how-can-i-set-it-up" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="upgrading-your-shell"><span class="me-2">Upgrading your shell</span><a href="#upgrading-your-shell" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Depending on the shell you used you might need to upgrade your terminal first. There are multiple options for this but the most common is to use Python for it. To spawn a Python terminal you can run:</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>python3 <span class="nt">-c</span> <span class="s1">'import pty; pty.spawn("/bin/bash")'</span>
+</pre></td></tr></tbody></table></code></div></div>
+<h3 id="backgrounding-the-process"><span class="me-2">Backgrounding the process</span><a href="#backgrounding-the-process" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote class="prompt-warning">
+  <p>If you have never done this step before, don’t be shocked. <u>It will drop you back to your local terminal.</u></p>
+</blockquote>
+<p>Next you want to background your shell, by pressing <b>[CTRL]+[Z]</b>.</p>
+<h3 id="setup-the-terminal-line-settings"><span class="me-2">Setup the terminal line settings</span><a href="#setup-the-terminal-line-settings" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote class="prompt-warning">
+  <p>If you have never done this step before, don’t be shocked. <u>This step will make your terminal look weird.</u></p>
+</blockquote>
+<p>In this step we will tell our terminal to switch to raw mode:</p>
+<ul>
+  <li>Input is sent chracter by character, instead of waiting for [Enter]</li>
+  <li>It doesn’t handle commands like [CTRL] + [C] anymore</li>
+</ul>
+
+<p>And also disable input echoing:</p>
+<ul>
+  <li>This prevents the console to print characters twice, or other strange outputs</li>
+</ul>
+
+<blockquote class="prompt-tip">
+  <p>fg is executed afterwards to jump back into the remote shell.</p>
+</blockquote>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">stty </span>raw <span class="nt">-echo</span><span class="p">;</span> <span class="nb">fg</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="output-your-local-term-variable"><span class="me-2">Output your local TERM variable</span><a href="#output-your-local-term-variable" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote class="prompt-tip">
+  <p>Checking your local TERM variable is only needed once and can be skipped in future projects.<br /> TERM is an environmental variable that specifies the kind of terminal you are using.</p>
+</blockquote>
+<p>Open a new terminal, then display your local TERM variable via echo and then copy it’s output.</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">echo</span> <span class="nv">$TERM</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="match-the-term-of-your-target-with-your-local-term"><span class="me-2">Match the TERM of your target with your local TERM</span><a href="#match-the-term-of-your-target-with-your-local-term" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote class="prompt-tip">
+  <p>Make sure to use whatever your TERM is instead of xterm-256color if it is something else.</p>
+</blockquote>
+<p>Afterwards we overwrite the TERM variable inside the remote shell to match our local TERM:</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">export </span><span class="nv">TERM</span><span class="o">=</span>xterm-256color
+</pre></td></tr></tbody></table></code></div></div>
+
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/blogging/">Blogging</a>,
+          <a href="/categories/guide/">Guide</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/reverse-shell/"
+            class="post-tag no-text-decoration"
+          >reverse-shell</a>
+        
+          <a
+            href="/tags/guide/"
+            class="post-tag no-text-decoration"
+          >guide</a>
+        
+          <a
+            href="/tags/quick-guide/"
+            class="post-tag no-text-decoration"
+          >quick-guide</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://twitter.com/intent/tweet?text=Guide&#58;%20Interactive%20Shells%20-%20Sanity-Archive&url=https%3A%2F%2Fsanity-archive.github.io%2Fposts%2FInteractive-Shell-Guide%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Guide&#58;%20Interactive%20Shells%20-%20Sanity-Archive&u=https%3A%2F%2Fsanity-archive.github.io%2Fposts%2FInteractive-Shell-Guide%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fsanity-archive.github.io%2Fposts%2FInteractive-Shell-Guide%2F&text=Guide&#58;%20Interactive%20Shells%20-%20Sanity-Archive" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
-<!-- #post-list -->
 
-
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
+</article>
 
 
             
@@ -1025,12 +1261,142 @@
             </div>
 
             
+              
+              
+
+
+
+
+
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Hack-The-Box-Shocker/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745060400"
+  data-df="ll"
+  
+>
+  Apr 19, 2025
+</time>
+
+              <h4 class="pt-0 my-2">HackTheBox - Shocker</h4>
+              <div class="text-muted">
+                <p>Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/Hack-The-Box-Shocker/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>HackTheBox - Shocker</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
             
 
             <!-- The Footer -->
@@ -1379,6 +1745,11 @@
     
 
     <!-- Embedded scripts -->
+
+    
+      
+      <!-- The comments switcher -->
+
 
     
 
