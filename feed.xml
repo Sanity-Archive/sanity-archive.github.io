@@ -4,7 +4,7 @@
   <id>https://sanity-archive.github.io/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-04-21T12:28:54+02:00</updated>
+  <updated>2025-06-01T12:02:49+02:00</updated>
   <author>
     <name>S4nity</name>
     <uri>https://sanity-archive.github.io/</uri>
@@ -50,7 +50,7 @@
     <link href="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
     <published>2025-04-19T13:00:00+02:00</published>
   
-    <updated>2025-04-19T13:00:00+02:00</updated>
+    <updated>2025-04-21T12:29:19+02:00</updated>
   
     <id>https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/</id>
     <content type="text/html" src="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" />
