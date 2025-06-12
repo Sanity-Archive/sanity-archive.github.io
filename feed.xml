@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://sanity-archive.github.io/</id>
+  <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-06-01T12:02:49+02:00</updated>
+  <updated>2025-06-12T13:53:51+02:00</updated>
   <author>
     <name>S4nity</name>
-    <uri>https://sanity-archive.github.io/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://sanity-archive.github.io/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://sanity-archive.github.io/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 S4nity </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,40 @@
 
   
   <entry>
+    <title>HackTheBox - Cap</title>
+    <link href="http://localhost:4000/posts/HackTheBox-Cap/" rel="alternate" type="text/html" title="HackTheBox - Cap" />
+    <published>2025-06-09T12:00:00+02:00</published>
+  
+    <updated>2025-06-09T12:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/HackTheBox-Cap/</id>
+    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Cap/" />
+    <author>
+      <name>sanity</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Writeup" />
+    
+  
+
+  <summary>Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Guide&amp;#58; Interactive Shells</title>
-    <link href="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" rel="alternate" type="text/html" title="Guide&amp;amp;#58; Interactive Shells" />
+    <link href="http://localhost:4000/posts/Interactive-Shell-Guide/" rel="alternate" type="text/html" title="Guide&amp;amp;#58; Interactive Shells" />
     <published>2025-04-20T13:00:00+02:00</published>
   
     <updated>2025-04-20T13:00:00+02:00</updated>
   
-    <id>https://sanity-archive.github.io/posts/Interactive-Shell-Guide/</id>
-    <content type="text/html" src="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" />
+    <id>http://localhost:4000/posts/Interactive-Shell-Guide/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Interactive-Shell-Guide/" />
     <author>
       <name>sanity</name>
     </author>
@@ -47,13 +73,13 @@
   
   <entry>
     <title>HackTheBox - Shocker</title>
-    <link href="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
+    <link href="http://localhost:4000/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
     <published>2025-04-19T13:00:00+02:00</published>
   
     <updated>2025-04-21T12:29:19+02:00</updated>
   
-    <id>https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/</id>
-    <content type="text/html" src="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" />
+    <id>http://localhost:4000/posts/Hack-The-Box-Shocker/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
     <author>
       <name>sanity</name>
     </author>

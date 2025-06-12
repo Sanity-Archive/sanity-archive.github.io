@@ -1,5 +1,13 @@
 [
   {
+    "title": "HackTheBox - Cap",
+    "url": "/posts/HackTheBox-Cap/",
+    "categories": "Blogging, Writeup",
+    "tags": "linux, web-attacks, priv-esc, IDOR, python3",
+    "date": "2025-06-09 12:00:00 +0200",
+    "content": "Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges."
+  },
+  {
     "title": "Guide&#58; Interactive Shells",
     "url": "/posts/Interactive-Shell-Guide/",
     "categories": "Blogging, Guide",
