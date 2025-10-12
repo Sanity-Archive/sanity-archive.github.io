@@ -1,0 +1,35 @@
+[
+  
+    {
+      "title"    : "Administrator",
+      "category" : "",
+      "tags"     : "windows, medium, active directory",
+      "url"      : "/posts/HackTheBox-Administrator/",
+      "date"     : "2025-10-11 13:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "HackTheBox - Cap",
+      "category" : "",
+      "tags"     : "linux, easy, web-attacks, priv-esc, IDOR, python3",
+      "url"      : "/posts/HackTheBox-Cap/",
+      "date"     : "2025-06-09 12:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Guide&amp;#58; Interactive Shells",
+      "category" : "",
+      "tags"     : "reverse-shell, guide, quick-guide",
+      "url"      : "/posts/Interactive-Shell-Guide/",
+      "date"     : "2025-04-20 13:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "HackTheBox - Shocker",
+      "category" : "",
+      "tags"     : "linux, easy, web-attacks, cgi, priv-esc",
+      "url"      : "/posts/Hack-The-Box-Shocker/",
+      "date"     : "2025-04-19 13:00:00 +0200"
+    } 
+  
+]

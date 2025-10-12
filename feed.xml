@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-10-12T11:47:35+02:00</updated>
+  <updated>2025-10-12T13:06:52+02:00</updated>
   <author>
     <name>S4nity</name>
     <uri>http://localhost:4000/</uri>
@@ -50,7 +50,7 @@
     <link href="http://localhost:4000/posts/HackTheBox-Cap/" rel="alternate" type="text/html" title="HackTheBox - Cap" />
     <published>2025-06-09T12:00:00+02:00</published>
   
-    <updated>2025-06-09T12:00:00+02:00</updated>
+    <updated>2025-10-12T11:48:13+02:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Cap/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Cap/" />
@@ -102,7 +102,7 @@
     <link href="http://localhost:4000/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
     <published>2025-04-19T13:00:00+02:00</published>
   
-    <updated>2025-04-21T12:29:19+02:00</updated>
+    <updated>2025-10-12T11:48:13+02:00</updated>
   
     <id>http://localhost:4000/posts/Hack-The-Box-Shocker/</id>
     <content type="text/html" src="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
