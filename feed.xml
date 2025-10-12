@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-06-12T14:24:35+02:00</updated>
+  <updated>2025-10-12T11:47:35+02:00</updated>
   <author>
     <name>S4nity</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Administrator</title>
+    <link href="http://localhost:4000/posts/HackTheBox-Administrator/" rel="alternate" type="text/html" title="Administrator" />
+    <published>2025-10-11T13:00:00+02:00</published>
+  
+    <updated>2025-10-11T13:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/HackTheBox-Administrator/</id>
+    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Administrator/" />
+    <author>
+      <name>sanity</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Writeup" />
+    
+  
+
+  <summary>Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash.</summary>
+
+  </entry>
 
   
   <entry>

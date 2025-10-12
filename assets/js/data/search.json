@@ -1,9 +1,17 @@
 [
   {
+    "title": "Administrator",
+    "url": "/posts/HackTheBox-Administrator/",
+    "categories": "Blogging, Writeup",
+    "tags": "windows, medium, active directory",
+    "date": "2025-10-11 13:00:00 +0200",
+    "content": "Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to rece..."
+  },
+  {
     "title": "HackTheBox - Cap",
     "url": "/posts/HackTheBox-Cap/",
     "categories": "Blogging, Writeup",
-    "tags": "linux, web-attacks, priv-esc, IDOR, python3",
+    "tags": "linux, easy, web-attacks, priv-esc, IDOR, python3",
     "date": "2025-06-09 12:00:00 +0200",
     "content": "Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges."
   },
@@ -19,7 +27,7 @@
     "title": "HackTheBox - Shocker",
     "url": "/posts/Hack-The-Box-Shocker/",
     "categories": "Blogging, Writeup",
-    "tags": "linux, web-attacks, cgi, priv-esc",
+    "tags": "linux, easy, web-attacks, cgi, priv-esc",
     "date": "2025-04-19 13:00:00 +0200",
     "content": "Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges."
   }

