@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>https://sanity-archive.github.io/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-10-12T13:06:52+02:00</updated>
+  <updated>2025-10-12T13:19:38+02:00</updated>
   <author>
     <name>S4nity</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>https://sanity-archive.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://sanity-archive.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/"/>
+    href="https://sanity-archive.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 S4nity </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>Administrator</title>
-    <link href="http://localhost:4000/posts/HackTheBox-Administrator/" rel="alternate" type="text/html" title="Administrator" />
+    <title>HackTheBox - Administrator</title>
+    <link href="https://sanity-archive.github.io/posts/HackTheBox-Administrator/" rel="alternate" type="text/html" title="HackTheBox - Administrator" />
     <published>2025-10-11T13:00:00+02:00</published>
   
-    <updated>2025-10-11T13:00:00+02:00</updated>
+    <updated>2025-10-12T13:16:45+02:00</updated>
   
-    <id>http://localhost:4000/posts/HackTheBox-Administrator/</id>
-    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Administrator/" />
+    <id>https://sanity-archive.github.io/posts/HackTheBox-Administrator/</id>
+    <content type="text/html" src="https://sanity-archive.github.io/posts/HackTheBox-Administrator/" />
     <author>
       <name>sanity</name>
     </author>
@@ -47,13 +47,13 @@
   
   <entry>
     <title>HackTheBox - Cap</title>
-    <link href="http://localhost:4000/posts/HackTheBox-Cap/" rel="alternate" type="text/html" title="HackTheBox - Cap" />
+    <link href="https://sanity-archive.github.io/posts/HackTheBox-Cap/" rel="alternate" type="text/html" title="HackTheBox - Cap" />
     <published>2025-06-09T12:00:00+02:00</published>
   
     <updated>2025-10-12T11:48:13+02:00</updated>
   
-    <id>http://localhost:4000/posts/HackTheBox-Cap/</id>
-    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Cap/" />
+    <id>https://sanity-archive.github.io/posts/HackTheBox-Cap/</id>
+    <content type="text/html" src="https://sanity-archive.github.io/posts/HackTheBox-Cap/" />
     <author>
       <name>sanity</name>
     </author>
@@ -73,13 +73,13 @@
   
   <entry>
     <title>Guide&amp;#58; Interactive Shells</title>
-    <link href="http://localhost:4000/posts/Interactive-Shell-Guide/" rel="alternate" type="text/html" title="Guide&amp;amp;#58; Interactive Shells" />
+    <link href="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" rel="alternate" type="text/html" title="Guide&amp;amp;#58; Interactive Shells" />
     <published>2025-04-20T13:00:00+02:00</published>
   
     <updated>2025-04-20T13:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/Interactive-Shell-Guide/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Interactive-Shell-Guide/" />
+    <id>https://sanity-archive.github.io/posts/Interactive-Shell-Guide/</id>
+    <content type="text/html" src="https://sanity-archive.github.io/posts/Interactive-Shell-Guide/" />
     <author>
       <name>sanity</name>
     </author>
@@ -99,13 +99,13 @@
   
   <entry>
     <title>HackTheBox - Shocker</title>
-    <link href="http://localhost:4000/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
+    <link href="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
     <published>2025-04-19T13:00:00+02:00</published>
   
     <updated>2025-10-12T11:48:13+02:00</updated>
   
-    <id>http://localhost:4000/posts/Hack-The-Box-Shocker/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
+    <id>https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/</id>
+    <content type="text/html" src="https://sanity-archive.github.io/posts/Hack-The-Box-Shocker/" />
     <author>
       <name>sanity</name>
     </author>
