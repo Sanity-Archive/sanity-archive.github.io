@@ -30,26 +30,28 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Guide: Interactive Shells" />
+<meta property="og:title" content="HackTheBox - Validation" />
 <meta name="author" content="S4nity" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="This guide explains what an interactive shell is and how you can get it running." />
-<meta property="og:description" content="This guide explains what an interactive shell is and how you can get it running." />
-<link rel="canonical" href="http://localhost:4000/posts/Interactive-Shell-Guide/" />
-<meta property="og:url" content="http://localhost:4000/posts/Interactive-Shell-Guide/" />
+<meta name="description" content="Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account." />
+<meta property="og:description" content="Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account." />
+<link rel="canonical" href="http://localhost:4000/posts/HackTheBox-Validation/" />
+<meta property="og:url" content="http://localhost:4000/posts/HackTheBox-Validation/" />
 <meta property="og:site_name" content="Sanity-Archive" />
+<meta property="og:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e2e239f39430cf597202497d910b82b8.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-04-20T13:00:00+02:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Guide: Interactive Shells" />
+<meta property="article:published_time" content="2025-10-12T13:00:00+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e2e239f39430cf597202497d910b82b8.png" />
+<meta property="twitter:title" content="HackTheBox - Validation" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-04-20T13:00:00+02:00","datePublished":"2025-04-20T13:00:00+02:00","description":"This guide explains what an interactive shell is and how you can get it running.","headline":"Guide: Interactive Shells","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Interactive-Shell-Guide/"},"url":"http://localhost:4000/posts/Interactive-Shell-Guide/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-12T13:00:00+02:00","datePublished":"2025-10-12T13:00:00+02:00","description":"Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.","headline":"HackTheBox - Validation","image":"https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e2e239f39430cf597202497d910b82b8.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Validation/"},"url":"http://localhost:4000/posts/HackTheBox-Validation/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Guide&#58; Interactive Shells | Sanity-Archive
+  <title>HackTheBox - Validation | Sanity-Archive
   </title>
 
   <!--
@@ -443,7 +445,7 @@
         
           
             
-              <span>Guide&#58; Interactive Shells</span>
+              <span>HackTheBox - Validation</span>
             
 
           
@@ -511,6 +513,607 @@
 
 
 
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -574,71 +1177,6 @@
   
 
   
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
-  
 
   
   
@@ -666,9 +1204,9 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Guide&#58; Interactive Shells</h1>
+    <h1 data-toc-skip>HackTheBox - Validation</h1>
     
-      <p class="post-desc fw-light mb-4">This guide explains what an interactive shell is and how you can get it running.</p>
+      <p class="post-desc fw-light mb-4">Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.</p>
     
 
     <div class="post-meta text-muted">
@@ -685,13 +1223,13 @@
 
 <time
   
-  data-ts="1745146800"
+  data-ts="1760266800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 20, 2025
+  Oct 12, 2025
 </time>
 
       </span>
@@ -699,6 +1237,15 @@
       <!-- lastmod date -->
       
 
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e2e239f39430cf597202497d910b82b8.png" class="popup img-link preview-img shimmer"><img src="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e2e239f39430cf597202497d910b82b8.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -743,9 +1290,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="397 words"
+  title="582 words"
 >
-  <em>2 min</em> read</span>
+  <em>3 min</em> read</span>
 
         </div>
       </div>
@@ -754,7 +1301,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Guide&#58; Interactive Shells</span>
+      <span class="label text-truncate">HackTheBox - Validation</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -767,7 +1314,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Guide&#58; Interactive Shells</div>
+        <div class="label text-truncate py-2 ms-4">HackTheBox - Validation</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -777,79 +1324,129 @@
   
 
   <div class="content">
-    <h2 id="what-is-an-interactive-shell"><span class="me-2">What is an interactive shell?</span><a href="#what-is-an-interactive-shell" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>It is a type of remote shell where the attacker gains full control over the target’s CLI (Command Line Interface), making the shell behave like a local terminal.<br />
-A good comparison is SSH vs. a regular reverse shell: in SSH, you can cancel commands by pressing [CTRL] + [C]. Doing that in a reverse shell stops netcat (or your listener), which closes the connection.</p>
-<h2 id="why-is-it-important"><span class="me-2">Why is it important?</span><a href="#why-is-it-important" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Interactive shells allow interactions that would not be possible with a regular remote shell.<br />
-Some functionality of an interactive shell:</p>
+    <h2 id="enumeration"><span class="me-2">Enumeration</span><a href="#enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>First we do a nmap scan to see which services are running on the system:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>nmap <span class="nt">-sC</span> <span class="nt">-sV</span> <span class="nt">-oN</span> nmap.txt 10.129.95.235
+&lt;...&gt;
+22/tcp   open     ssh           OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 <span class="o">(</span>Ubuntu Linux<span class="p">;</span> protocol 2.0<span class="o">)</span>
+&lt;...&gt;
+80/tcp   open     http          Apache httpd 2.4.48 <span class="o">((</span>Debian<span class="o">))</span>
+&lt;...&gt;
+8080/tcp open     http          nginx
+|_http-title: 502 Bad Gateway
+&lt;...&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We can see that SSH and two HTTP ports are open. SSH is only on very rare occasions a good target to start with and HTTP port 8080 responded with 502 Bad Gateway, which leaves us with attacking port 80.<br /></p>
+
+<p>Entering the website directs us to a signup page.</p>
+
+<p><a href="/post-images/validation/initial_website.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/initial_website.jpg" alt="Join the UHC" loading="lazy"></a></p>
+
+<p>If we enter a name and click on “Join Now”, we are directed to a page that tells us who is also registered for the country we selected.</p>
+
+<p><a href="/post-images/validation/initial_website_registered.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/initial_website_registered.jpg" alt="Site after signing up" loading="lazy"></a></p>
+
+<p>There are no fields for user input on this page, so we go back to the sign up page. If we enter a new name and click on “Join Now” it shows both, our new and old player name,
+which means that it might have a database in the backend. So we go back, enter a new name, click on “Join Now” and intercept the connection with BurpSuite.</p>
+
+<p><a href="/post-images/validation/initial_burp.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/initial_burp.jpg" alt="Initial BurpSuite scan" loading="lazy"></a></p>
+
+<p>Let’s think about the information we have, before we continue.<br /><br /></p>
+
 <ul>
-  <li>stopping commands via [CTRL] + [C]</li>
-  <li>using text editors like VIM or Nano</li>
-  <li>tab completion when navigating thru the system</li>
-  <li>using the arrow keys when editing commands</li>
-  <li>and more</li>
+  <li>
+    <p>So, we have a user input field and a dropdown menu. It is very likely that the user input field is protected against injections. The dropdown menu on the other hand might be considered “safe” data, because you can only select an item from the list.<br /><br /></p>
+  </li>
+  <li>
+    <p>It is rather likely that there is a database running in the backend.<br /><br /></p>
+  </li>
+  <li>
+    <p>We saw in the account.php page a player name and a country, but if it is a database it is very likely that every entry has an ID, so it should look like this:<br />
+ID:playername:country<br /><br /></p>
+  </li>
 </ul>
 
-<h2 id="how-can-i-set-it-up"><span class="me-2">How can I set it up?</span><a href="#how-can-i-set-it-up" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<h3 id="upgrading-your-shell"><span class="me-2">Upgrading your shell</span><a href="#upgrading-your-shell" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Depending on the shell you used you might need to upgrade your terminal first. There are multiple options for this but the most common is to use Python for it. To spawn a Python terminal you can run:</p>
+<p>So, let’s attack the dropdown menu with SQL-injection via union selection and three fields (because of ID,playername,country).
+A simple method is utilizing the @@version function, which will display the version and type of database.</p>
+
+<p><a href="/post-images/validation/burp_sqli_version.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/burp_sqli_version.jpg" alt="Burp SQLi version" loading="lazy"></a></p>
+
+<p><a href="/post-images/validation/burp_sqli_version_result.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/burp_sqli_version_result.jpg" alt="Burp SQLi version result" loading="lazy"></a></p>
+
+<p>It worked!
+Now let’s try to get a webshell running by injecting a php shell and trying to store it as a web page.</p>
+
+<p><a href="/post-images/validation/burp_sqli_webshell.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/burp_sqli_webshell.jpg" alt="Burp SQLi webshell" loading="lazy"></a></p>
+
+<p>Now we need to navigate to “http://IP/shell.php?0=id”.</p>
+
+<p><a href="/post-images/validation/webshell_initial.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/webshell_initial.jpg" alt="Webshell results" loading="lazy"></a></p>
+
+<p>It worked!
+Let’s use the webshell to get a reverse shell going. First we need to start a listener:</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>python3 <span class="nt">-c</span> <span class="s1">'import pty; pty.spawn("/bin/bash")'</span>
+2
+</pre></td><td class="rouge-code"><pre>nc <span class="nt">-lvnp</span> 8844
+&lt;...&gt;
 </pre></td></tr></tbody></table></code></div></div>
-<h3 id="backgrounding-the-process"><span class="me-2">Backgrounding the process</span><a href="#backgrounding-the-process" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<blockquote class="prompt-warning">
-  <p>If you have never done this step before, don’t be shocked. <u>It will drop you back to your local terminal.</u></p>
-</blockquote>
-<p>Next you want to background your shell, by pressing <b>[CTRL]+[Z]</b>.</p>
-<h3 id="setup-the-terminal-line-settings"><span class="me-2">Setup the terminal line settings</span><a href="#setup-the-terminal-line-settings" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<blockquote class="prompt-warning">
-  <p>If you have never done this step before, don’t be shocked. <u>This step will make your terminal look weird.</u></p>
-</blockquote>
-<p>In this step we will tell our terminal to switch to raw mode:</p>
-<ul>
-  <li>Input is sent chracter by character, instead of waiting for [Enter]</li>
-  <li>It doesn’t handle commands like [CTRL] + [C] anymore</li>
-</ul>
 
-<p>And also disable input echoing:</p>
-<ul>
-  <li>This prevents the console to print characters twice, or other strange outputs</li>
-</ul>
+<p>Then we need to intercept the connection with BurpSuite and inject a reverse shell. I used a PHP shell in this case, because we already know it is installed on the system.</p>
 
-<blockquote class="prompt-tip">
-  <p>fg is executed afterwards to jump back into the remote shell.</p>
+<blockquote class="prompt-info">
+  <p>The first screenshot shows the shell “as is”. The second picture is URL-encoded, which you can do by highlighting the text and the pressing [CTRL] + [U].</p>
 </blockquote>
+
+<p><a href="/post-images/validation/reverse_shell.jpg" class="popup img-link  shimmer"><img src="/post-images/validation/reverse_shell.jpg" alt="Reverse shell" loading="lazy"></a></p>
+
+<p>Afterwards I ran the command “/bin/bash -i” to be able to see in which directory we are currently in.
+Then I grabbed the user flag in the /home directory.</p>
+
+<h2 id="escalating-our-privileges"><span class="me-2">Escalating our privileges</span><a href="#escalating-our-privileges" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>First I checked /etc/passwd to see what other users accounts are on the machine.</p>
+
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">stty </span>raw <span class="nt">-echo</span><span class="p">;</span> <span class="nb">fg</span>
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">cat</span> /etc/passwd | <span class="nb">grep</span> <span class="s1">'/bash'</span>
+root:x:0:0:root:/root:/bin/bash
 </pre></td></tr></tbody></table></code></div></div>
+<p>We can see that only root is able to login.<br />
+Then I checked the config.php in the home directory of www-data (/var/www/html), to see if we can get credentials from there.
+It actually stores clear text credentials!
+Let’s try if they work for root:</p>
 
-<h3 id="output-your-local-term-variable"><span class="me-2">Output your local TERM variable</span><a href="#output-your-local-term-variable" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<blockquote class="prompt-tip">
-  <p>Checking your local TERM variable is only needed once and can be skipped in future projects.<br /> TERM is an environmental variable that specifies the kind of terminal you are using.</p>
-</blockquote>
-<p>Open a new terminal, then display your local TERM variable via echo and then copy it’s output.</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">echo</span> <span class="nv">$TERM</span>
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>su -
+Password: <span class="k">***</span>
+<span class="c"># It worked!</span>
+<span class="nb">cat </span>root.txt
 </pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="match-the-term-of-your-target-with-your-local-term"><span class="me-2">Match the TERM of your target with your local TERM</span><a href="#match-the-term-of-your-target-with-your-local-term" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<blockquote class="prompt-tip">
-  <p>Make sure to use whatever your TERM is instead of xterm-256color if it is something else.</p>
-</blockquote>
-<p>Afterwards we overwrite the TERM variable inside the remote shell to match our local TERM:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">export </span><span class="nv">TERM</span><span class="o">=</span>xterm-256color
-</pre></td></tr></tbody></table></code></div></div>
-
+<h2 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Thank you for reading, have a wonderful day and keep hacking!</p>
 
   </div>
 
@@ -860,7 +1457,7 @@ Some functionality of an interactive shell:</p>
         <i class="far fa-folder-open fa-fw me-1"></i>
         
           <a href="/categories/blogging/">Blogging</a>,
-          <a href="/categories/guide/">Guide</a>
+          <a href="/categories/writeup/">Writeup</a>
       </div>
     
 
@@ -870,19 +1467,29 @@ Some functionality of an interactive shell:</p>
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/reverse-shell/"
+            href="/tags/linux/"
             class="post-tag no-text-decoration"
-          >reverse-shell</a>
+          >linux</a>
         
           <a
-            href="/tags/guide/"
+            href="/tags/easy/"
             class="post-tag no-text-decoration"
-          >guide</a>
+          >easy</a>
         
           <a
-            href="/tags/quick-guide/"
+            href="/tags/web-attacks/"
             class="post-tag no-text-decoration"
-          >quick-guide</a>
+          >web-attacks</a>
+        
+          <a
+            href="/tags/sql-injection/"
+            class="post-tag no-text-decoration"
+          >sql-injection</a>
+        
+          <a
+            href="/tags/priv-esc/"
+            class="post-tag no-text-decoration"
+          >priv-esc</a>
         
       </div>
     
@@ -918,21 +1525,21 @@ Some functionality of an interactive shell:</p>
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Guide&#58;%20Interactive%20Shells%20-%20Sanity-Archive&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FInteractive-Shell-Guide%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=HackTheBox%20-%20Validation%20-%20Sanity-Archive&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Validation%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Guide&#58;%20Interactive%20Shells%20-%20Sanity-Archive&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FInteractive-Shell-Guide%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=HackTheBox%20-%20Validation%20-%20Sanity-Archive&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Validation%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FInteractive-Shell-Guide%2F&text=Guide&#58;%20Interactive%20Shells%20-%20Sanity-Archive" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Validation%2F&text=HackTheBox%20-%20Validation%20-%20Sanity-Archive" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1517,43 +2124,43 @@ Some functionality of an interactive shell:</p>
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1569,7 +2176,7 @@ Some functionality of an interactive shell:</p>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/HackTheBox-Validation/" class="post-preview card h-100">
+          <a href="/posts/HackTheBox-Cap/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1581,16 +2188,44 @@ Some functionality of an interactive shell:</p>
 
 <time
   
-  data-ts="1760266800"
+  data-ts="1749463200"
   data-df="ll"
   
 >
-  Oct 12, 2025
+  Jun  9, 2025
 </time>
 
-              <h4 class="pt-0 my-2">HackTheBox - Validation</h4>
+              <h4 class="pt-0 my-2">HackTheBox - Cap</h4>
               <div class="text-muted">
-                <p>Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we ch...</p>
+                <p>Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges.</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Hack-The-Box-Shocker/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745060400"
+  data-df="ll"
+  
+>
+  Apr 19, 2025
+</time>
+
+              <h4 class="pt-0 my-2">HackTheBox - Shocker</h4>
+              <div class="text-muted">
+                <p>Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.</p>
               </div>
             </div>
           </a>
@@ -1624,34 +2259,6 @@ Some functionality of an interactive shell:</p>
           </a>
         </article>
       
-        <article class="col">
-          <a href="/posts/HackTheBox-Cap/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1749463200"
-  data-df="ll"
-  
->
-  Jun  9, 2025
-</time>
-
-              <h4 class="pt-0 my-2">HackTheBox - Cap</h4>
-              <div class="text-muted">
-                <p>Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1667,22 +2274,18 @@ Some functionality of an interactive shell:</p>
 
   
     <a
-      href="/posts/Hack-The-Box-Shocker/"
+      href="/posts/HackTheBox-Administrator/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>HackTheBox - Shocker</p>
+      <p>HackTheBox - Administrator</p>
     </a>
   
 
   
-    <a
-      href="/posts/HackTheBox-Cap/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>HackTheBox - Cap</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

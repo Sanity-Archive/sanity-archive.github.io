@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "HackTheBox - Validation",
+      "category" : "",
+      "tags"     : "linux, easy, web-attacks, sql-injection, priv-esc",
+      "url"      : "/posts/HackTheBox-Validation/",
+      "date"     : "2025-10-12 13:00:00 +0200"
+    } ,
+  
+    {
       "title"    : "HackTheBox - Administrator",
       "category" : "",
       "tags"     : "windows, medium, active directory",

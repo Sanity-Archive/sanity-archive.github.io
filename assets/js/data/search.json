@@ -1,5 +1,13 @@
 [
   {
+    "title": "HackTheBox - Validation",
+    "url": "/posts/HackTheBox-Validation/",
+    "categories": "Blogging, Writeup",
+    "tags": "linux, easy, web-attacks, sql-injection, priv-esc",
+    "date": "2025-10-12 13:00:00 +0200",
+    "content": "Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we ch..."
+  },
+  {
     "title": "HackTheBox - Administrator",
     "url": "/posts/HackTheBox-Administrator/",
     "categories": "Blogging, Writeup",
