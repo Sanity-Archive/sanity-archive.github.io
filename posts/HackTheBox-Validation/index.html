@@ -33,8 +33,8 @@
 <meta property="og:title" content="HackTheBox - Validation" />
 <meta name="author" content="S4nity" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account." />
-<meta property="og:description" content="Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account." />
+<meta name="description" content="Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account." />
+<meta property="og:description" content="Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account." />
 <link rel="canonical" href="http://localhost:4000/posts/HackTheBox-Validation/" />
 <meta property="og:url" content="http://localhost:4000/posts/HackTheBox-Validation/" />
 <meta property="og:site_name" content="Sanity-Archive" />
@@ -47,7 +47,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-12T13:00:00+02:00","datePublished":"2025-10-12T13:00:00+02:00","description":"Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.","headline":"HackTheBox - Validation","image":"https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e2e239f39430cf597202497d910b82b8.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Validation/"},"url":"http://localhost:4000/posts/HackTheBox-Validation/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-12T13:00:00+02:00","datePublished":"2025-10-12T13:00:00+02:00","description":"Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.","headline":"HackTheBox - Validation","image":"https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e2e239f39430cf597202497d910b82b8.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Validation/"},"url":"http://localhost:4000/posts/HackTheBox-Validation/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1206,7 +1206,7 @@
   <header>
     <h1 data-toc-skip>HackTheBox - Validation</h1>
     
-      <p class="post-desc fw-light mb-4">Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.</p>
+      <p class="post-desc fw-light mb-4">Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.</p>
     
 
     <div class="post-meta text-muted">
@@ -1594,6 +1594,13 @@ Password: <span class="k">***</span>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/HackTheBox-Redelegate/">HackTheBox - Redelegate</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/HackTheBox-Administrator/">HackTheBox - Administrator</a>
         </li>
       
@@ -1616,13 +1623,6 @@ Password: <span class="k">***</span>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/HackTheBox-Cap/">HackTheBox - Cap</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Interactive-Shell-Guide/">Guide&#58; Interactive Shells</a>
         </li>
       
     </ul>
@@ -1661,10 +1661,6 @@ Password: <span class="k">***</span>
     
     
     
-      
-        
-        
-
   
     
     
@@ -1674,13 +1670,6 @@ Password: <span class="k">***</span>
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1716,30 +1705,6 @@ Password: <span class="k">***</span>
     
     
     
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1764,18 +1729,6 @@ Password: <span class="k">***</span>
     
     
     
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1792,8 +1745,6 @@ Password: <span class="k">***</span>
     
     
     
-    
-      
     
   
     
@@ -1829,6 +1780,99 @@ Password: <span class="k">***</span>
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1868,11 +1912,6 @@ Password: <span class="k">***</span>
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -1883,53 +1922,6 @@ Password: <span class="k">***</span>
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -1978,6 +1970,29 @@ Password: <span class="k">***</span>
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1997,6 +2012,13 @@ Password: <span class="k">***</span>
     
     
     
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -2008,6 +2030,8 @@ Password: <span class="k">***</span>
     
     
     
+    
+      
     
   
     
@@ -2025,10 +2049,10 @@ Password: <span class="k">***</span>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
@@ -2040,19 +2064,19 @@ Password: <span class="k">***</span>
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active directory</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active-directory</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/hard/">hard</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/idor/">IDOR</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/python3/">python3</a>
       
     </div>
   </section>
@@ -2161,6 +2185,18 @@ Password: <span class="k">***</span>
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -2232,7 +2268,7 @@ Password: <span class="k">***</span>
         </article>
       
         <article class="col">
-          <a href="/posts/HackTheBox-Administrator/" class="post-preview card h-100">
+          <a href="/posts/HackTheBox-Redelegate/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2244,16 +2280,16 @@ Password: <span class="k">***</span>
 
 <time
   
-  data-ts="1760180400"
+  data-ts="1760353200"
   data-df="ll"
   
 >
-  Oct 11, 2025
+  Oct 13, 2025
 </time>
 
-              <h4 class="pt-0 my-2">HackTheBox - Administrator</h4>
+              <h4 class="pt-0 my-2">HackTheBox - Redelegate</h4>
               <div class="text-muted">
-                <p>Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to rece...</p>
+                <p>Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user...</p>
               </div>
             </div>
           </a>
@@ -2283,9 +2319,13 @@ Password: <span class="k">***</span>
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/HackTheBox-Redelegate/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>HackTheBox - Redelegate</p>
+    </a>
   
 </nav>
 
@@ -2366,10 +2406,6 @@ Password: <span class="k">***</span>
     
     
     
-      
-        
-        
-
   
     
     
@@ -2379,13 +2415,6 @@ Password: <span class="k">***</span>
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2421,30 +2450,6 @@ Password: <span class="k">***</span>
     
     
     
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2469,18 +2474,6 @@ Password: <span class="k">***</span>
     
     
     
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2497,8 +2490,6 @@ Password: <span class="k">***</span>
     
     
     
-    
-      
     
   
     
@@ -2534,6 +2525,99 @@ Password: <span class="k">***</span>
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -2573,11 +2657,6 @@ Password: <span class="k">***</span>
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -2588,53 +2667,6 @@ Password: <span class="k">***</span>
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -2683,6 +2715,29 @@ Password: <span class="k">***</span>
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -2702,6 +2757,13 @@ Password: <span class="k">***</span>
     
     
     
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -2713,6 +2775,8 @@ Password: <span class="k">***</span>
     
     
     
+    
+      
     
   
     
@@ -2730,10 +2794,10 @@ Password: <span class="k">***</span>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
@@ -2745,19 +2809,19 @@ Password: <span class="k">***</span>
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active directory</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active-directory</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/hard/">hard</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/idor/">IDOR</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/python3/">python3</a>
       
     </div>
   </section>

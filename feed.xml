@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-10-13T11:08:53+02:00</updated>
+  <updated>2025-10-14T14:47:44+02:00</updated>
   <author>
     <name>S4nity</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HackTheBox - Redelegate</title>
+    <link href="http://localhost:4000/posts/HackTheBox-Redelegate/" rel="alternate" type="text/html" title="HackTheBox - Redelegate" />
+    <published>2025-10-13T13:00:00+02:00</published>
+  
+    <updated>2025-10-13T13:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/HackTheBox-Redelegate/</id>
+    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Redelegate/" />
+    <author>
+      <name>sanity</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Writeup" />
+    
+  
+
+  <summary>Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user list. Password spraying allows us to find a user that re-used their password. The user has &amp;quot;ForceChangePassword&amp;quot; control over another user, who has &amp;quot;GenericAll&amp;quot; control over the machine account, whic...</summary>
+
+  </entry>
 
   
   <entry>
@@ -40,7 +66,7 @@
     
   
 
-  <summary>Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.</summary>
+  <summary>Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.</summary>
 
   </entry>
 
@@ -119,32 +145,6 @@
   
 
   <summary>This guide explains what an interactive shell is and how you can get it running.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>HackTheBox - Shocker</title>
-    <link href="http://localhost:4000/posts/Hack-The-Box-Shocker/" rel="alternate" type="text/html" title="HackTheBox - Shocker" />
-    <published>2025-04-19T13:00:00+02:00</published>
-  
-    <updated>2025-10-12T11:48:13+02:00</updated>
-  
-    <id>http://localhost:4000/posts/Hack-The-Box-Shocker/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
-    <author>
-      <name>sanity</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Writeup" />
-    
-  
-
-  <summary>Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.</summary>
 
   </entry>
 

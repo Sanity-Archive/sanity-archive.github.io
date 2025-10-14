@@ -1,11 +1,19 @@
 [
   {
+    "title": "HackTheBox - Redelegate",
+    "url": "/posts/HackTheBox-Redelegate/",
+    "categories": "Blogging, Writeup",
+    "tags": "linux, hard, active-directory, ms-sql, sql",
+    "date": "2025-10-13 13:00:00 +0200",
+    "content": "Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user..."
+  },
+  {
     "title": "HackTheBox - Validation",
     "url": "/posts/HackTheBox-Validation/",
     "categories": "Blogging, Writeup",
     "tags": "linux, easy, web-attacks, sql-injection, priv-esc",
     "date": "2025-10-12 13:00:00 +0200",
-    "content": "Validation is an easy difficulty machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we ch..."
+    "content": "Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check f..."
   },
   {
     "title": "HackTheBox - Administrator",

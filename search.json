@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "HackTheBox - Redelegate",
+      "category" : "",
+      "tags"     : "linux, hard, active-directory, ms-sql, sql",
+      "url"      : "/posts/HackTheBox-Redelegate/",
+      "date"     : "2025-10-13 13:00:00 +0200"
+    } ,
+  
+    {
       "title"    : "HackTheBox - Validation",
       "category" : "",
       "tags"     : "linux, easy, web-attacks, sql-injection, priv-esc",
