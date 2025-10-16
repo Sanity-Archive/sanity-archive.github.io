@@ -997,7 +997,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="751 words"
+  title="742 words"
 >
   <em>4 min</em> read</span>
 
@@ -1194,11 +1194,11 @@ So we navigate back to the “Script Console” and run:</p>
   <p>If your output has some symbols that your browser cannot display, go back to the “Update”-page and repeat the process.</p>
 </blockquote>
 
-<pre><code class="language-Groovy">println( hudson.util.Secret.decrypt("{AQAAABAAAAowL***aaMR8IMMaKSM=}"))
------BEGIN OPENSSH PRIVATE KEY-----
-&lt;...&gt;
------END OPENSSH PRIVATE KEY-----
-</code></pre>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>println<span class="o">(</span>hudson.util.Secret.decrypt<span class="o">(</span><span class="s2">"{AQAAABAAAAowL***aaMR8IMMaKSM=}"</span><span class="o">))</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="prompt-warning">
   <p>Don’t click on the “Click to copy” button. Copy it manually, or else the key might not work.</p>
@@ -1380,6 +1380,13 @@ root@builder:~#
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/Interactive-Shell-Guide/">Guide&#58; Interactive Shells</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/HackTheBox-Validation/">HackTheBox - Validation</a>
         </li>
       
@@ -1395,13 +1402,6 @@ root@builder:~#
         
         <li class="text-truncate lh-lg">
           <a href="/posts/HackTheBox-Builder/">HackTheBox - Builder</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/HackTheBox-Administrator/">HackTheBox - Administrator</a>
         </li>
       
     </ul>

@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/posts/Hack-The-Box-Shocker/</loc>
-<lastmod>2025-10-14T14:48:06+02:00</lastmod>
+<lastmod>2025-10-16T13:45:14+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/posts/Interactive-Shell-Guide/</loc>
-<lastmod>2025-04-20T13:00:00+02:00</lastmod>
+<lastmod>2025-10-16T13:45:14+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/posts/HackTheBox-Cap/</loc>
@@ -30,19 +30,19 @@
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
-<lastmod>2025-10-16T13:44:43+02:00</lastmod>
+<lastmod>2025-10-16T13:53:54+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>
-<lastmod>2025-10-16T13:44:43+02:00</lastmod>
+<lastmod>2025-10-16T13:53:54+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/archives/</loc>
-<lastmod>2025-10-16T13:44:43+02:00</lastmod>
+<lastmod>2025-10-16T13:53:54+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
-<lastmod>2025-10-16T13:44:43+02:00</lastmod>
+<lastmod>2025-10-16T13:53:54+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/disabled/2019-08-08-text-and-typography.html</loc>
