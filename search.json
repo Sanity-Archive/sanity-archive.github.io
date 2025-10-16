@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "HackTheBox - Builder",
+      "category" : "",
+      "tags"     : "linux, medium, jenkins, cve, web-attacks",
+      "url"      : "/posts/HackTheBox-Builder/",
+      "date"     : "2025-10-13 13:00:00 +0200"
+    } ,
+  
+    {
       "title"    : "HackTheBox - Redelegate",
       "category" : "",
       "tags"     : "linux, hard, active-directory, ms-sql, sql",
@@ -43,7 +51,7 @@
     {
       "title"    : "HackTheBox - Shocker",
       "category" : "",
-      "tags"     : "linux, easy, web-attacks, cgi, priv-esc",
+      "tags"     : "linux, easy, web-attacks, cgi, priv-esc, cve",
       "url"      : "/posts/Hack-The-Box-Shocker/",
       "date"     : "2025-04-19 13:00:00 +0200"
     } 

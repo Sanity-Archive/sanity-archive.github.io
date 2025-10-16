@@ -1,5 +1,13 @@
 [
   {
+    "title": "HackTheBox - Builder",
+    "url": "/posts/HackTheBox-Builder/",
+    "categories": "Blogging, Writeup",
+    "tags": "linux, medium, jenkins, cve, web-attacks",
+    "date": "2025-10-13 13:00:00 +0200",
+    "content": "Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us ..."
+  },
+  {
     "title": "HackTheBox - Redelegate",
     "url": "/posts/HackTheBox-Redelegate/",
     "categories": "Blogging, Writeup",
@@ -43,7 +51,7 @@
     "title": "HackTheBox - Shocker",
     "url": "/posts/Hack-The-Box-Shocker/",
     "categories": "Blogging, Writeup",
-    "tags": "linux, easy, web-attacks, cgi, priv-esc",
+    "tags": "linux, easy, web-attacks, cgi, priv-esc, cve",
     "date": "2025-04-19 13:00:00 +0200",
     "content": "Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges."
   }

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-10-14T14:47:44+02:00</updated>
+  <updated>2025-10-16T13:44:43+02:00</updated>
   <author>
     <name>S4nity</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HackTheBox - Builder</title>
+    <link href="http://localhost:4000/posts/HackTheBox-Builder/" rel="alternate" type="text/html" title="HackTheBox - Builder" />
+    <published>2025-10-13T13:00:00+02:00</published>
+  
+    <updated>2025-10-13T13:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/HackTheBox-Builder/</id>
+    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Builder/" />
+    <author>
+      <name>sanity</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Writeup" />
+    
+  
+
+  <summary>Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us to grab a SSH key for the root user.</summary>
+
+  </entry>
 
   
   <entry>
@@ -50,7 +76,7 @@
     <link href="http://localhost:4000/posts/HackTheBox-Validation/" rel="alternate" type="text/html" title="HackTheBox - Validation" />
     <published>2025-10-12T13:00:00+02:00</published>
   
-    <updated>2025-10-12T13:00:00+02:00</updated>
+    <updated>2025-10-14T14:48:06+02:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Validation/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Validation/" />
@@ -119,32 +145,6 @@
   
 
   <summary>Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Guide&amp;#58; Interactive Shells</title>
-    <link href="http://localhost:4000/posts/Interactive-Shell-Guide/" rel="alternate" type="text/html" title="Guide&amp;amp;#58; Interactive Shells" />
-    <published>2025-04-20T13:00:00+02:00</published>
-  
-    <updated>2025-04-20T13:00:00+02:00</updated>
-  
-    <id>http://localhost:4000/posts/Interactive-Shell-Guide/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Interactive-Shell-Guide/" />
-    <author>
-      <name>sanity</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Guide" />
-    
-  
-
-  <summary>This guide explains what an interactive shell is and how you can get it running.</summary>
 
   </entry>
 
