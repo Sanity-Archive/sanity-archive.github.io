@@ -38,16 +38,16 @@
 <link rel="canonical" href="http://localhost:4000/posts/HackTheBox-Redelegate/" />
 <meta property="og:url" content="http://localhost:4000/posts/HackTheBox-Redelegate/" />
 <meta property="og:site_name" content="Sanity-Archive" />
-<meta property="og:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2dd7e45185bff1d1aba95b4836311df3.png" />
+<meta property="og:image" content="http://localhost:4000/post-images/redelegate/avatar.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-10-13T13:00:00+02:00" />
+<meta property="article:published_time" content="2025-10-13T12:00:00+01:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2dd7e45185bff1d1aba95b4836311df3.png" />
+<meta property="twitter:image" content="http://localhost:4000/post-images/redelegate/avatar.png" />
 <meta property="twitter:title" content="HackTheBox - Redelegate" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-13T13:00:00+02:00","datePublished":"2025-10-13T13:00:00+02:00","description":"Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user list. Password spraying allows us to find a user that re-used their password. The user has “ForceChangePassword” control over another user, who has “GenericAll” control over the machine account, which allows us to use “Constrained Delegation” to escalate our privileges.","headline":"HackTheBox - Redelegate","image":"https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2dd7e45185bff1d1aba95b4836311df3.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Redelegate/"},"url":"http://localhost:4000/posts/HackTheBox-Redelegate/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-13T12:00:00+01:00","datePublished":"2025-10-13T12:00:00+01:00","description":"Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user list. Password spraying allows us to find a user that re-used their password. The user has “ForceChangePassword” control over another user, who has “GenericAll” control over the machine account, which allows us to use “Constrained Delegation” to escalate our privileges.","headline":"HackTheBox - Redelegate","image":"http://localhost:4000/post-images/redelegate/avatar.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/HackTheBox-Redelegate/"},"url":"http://localhost:4000/posts/HackTheBox-Redelegate/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1015,7 +1015,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2dd7e45185bff1d1aba95b4836311df3.png" class="popup img-link preview-img shimmer"><img src="https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2dd7e45185bff1d1aba95b4836311df3.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+          <a href="/post-images/redelegate/avatar.png" class="popup img-link preview-img shimmer"><img src="/post-images/redelegate/avatar.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -1747,6 +1747,20 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/HackTheBox-POV/">HackTheBox - POV</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/HackTheBox-Builder/">HackTheBox - Builder</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Hack-The-Box-Shocker/">HackTheBox - Shocker</a>
         </li>
       
@@ -1762,20 +1776,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
         
         <li class="text-truncate lh-lg">
           <a href="/posts/HackTheBox-Validation/">HackTheBox - Validation</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/HackTheBox-Redelegate/">HackTheBox - Redelegate</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/HackTheBox-Builder/">HackTheBox - Builder</a>
         </li>
       
     </ul>
@@ -1849,6 +1849,127 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1923,31 +2044,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2007,11 +2103,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -2133,6 +2224,66 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2175,46 +2326,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
       
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -2238,16 +2349,19 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
         <a class="post-tag btn btn-outline-primary" href="/tags/web-attacks/">web-attacks</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cve/">cve</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/windows/">windows</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active directory</a>
@@ -2257,9 +2371,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
       
     </div>
   </section>
@@ -2392,6 +2503,18 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -2419,11 +2542,11 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
 
 <time
   
-  data-ts="1760353200"
+  data-ts="1760526000"
   data-df="ll"
   
 >
-  Oct 13, 2025
+  Oct 15, 2025
 </time>
 
               <h4 class="pt-0 my-2">HackTheBox - Builder</h4>
@@ -2636,6 +2759,127 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2710,31 +2954,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2794,11 +3013,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -2920,6 +3134,66 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2962,46 +3236,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
     
     
       
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -3025,16 +3259,19 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
         <a class="post-tag btn btn-outline-primary" href="/tags/web-attacks/">web-attacks</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cve/">cve</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/windows/">windows</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active directory</a>
@@ -3044,9 +3281,6 @@ evil-winrm <span class="nt">-i</span> 10.129.234.50 <span class="nt">-u</span> A
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
       
     </div>
   </section>

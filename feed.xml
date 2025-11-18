@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-10-16T13:53:54+02:00</updated>
+  <updated>2025-11-18T17:08:43+01:00</updated>
   <author>
     <name>S4nity</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,37 @@
 
   
   <entry>
+    <title>HackTheBox - POV</title>
+    <link href="http://localhost:4000/posts/HackTheBox-POV/" rel="alternate" type="text/html" title="HackTheBox - POV" />
+    <published>2025-11-15T12:00:00+01:00</published>
+  
+    <updated>2025-11-15T12:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/HackTheBox-POV/</id>
+    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-POV/" />
+    <author>
+      <name>sanity</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Writeup" />
+    
+  
+
+  <summary>POV is a medium difficulty Linux machine, that requires us to find a second VHost, which we can exploit with LFI and a deserialization attack to gain a foothold. To escalate our privileges we have to exploit stored PSCredentials, which allows us to gain access to a second user account. The second user account has SeDebugPrivileges, which we can abuse to gain System privileges.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>HackTheBox - Builder</title>
     <link href="http://localhost:4000/posts/HackTheBox-Builder/" rel="alternate" type="text/html" title="HackTheBox - Builder" />
-    <published>2025-10-13T13:00:00+02:00</published>
+    <published>2025-10-15T12:00:00+01:00</published>
   
-    <updated>2025-10-13T13:00:00+02:00</updated>
+    <updated>2025-10-16T12:54:07+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Builder/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Builder/" />
@@ -48,9 +74,9 @@
   <entry>
     <title>HackTheBox - Redelegate</title>
     <link href="http://localhost:4000/posts/HackTheBox-Redelegate/" rel="alternate" type="text/html" title="HackTheBox - Redelegate" />
-    <published>2025-10-13T13:00:00+02:00</published>
+    <published>2025-10-13T12:00:00+01:00</published>
   
-    <updated>2025-10-13T13:00:00+02:00</updated>
+    <updated>2025-10-13T12:00:00+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Redelegate/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Redelegate/" />
@@ -74,9 +100,9 @@
   <entry>
     <title>HackTheBox - Validation</title>
     <link href="http://localhost:4000/posts/HackTheBox-Validation/" rel="alternate" type="text/html" title="HackTheBox - Validation" />
-    <published>2025-10-12T13:00:00+02:00</published>
+    <published>2025-10-12T12:00:00+01:00</published>
   
-    <updated>2025-10-14T14:48:06+02:00</updated>
+    <updated>2025-10-14T13:48:06+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Validation/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Validation/" />
@@ -100,9 +126,9 @@
   <entry>
     <title>HackTheBox - Administrator</title>
     <link href="http://localhost:4000/posts/HackTheBox-Administrator/" rel="alternate" type="text/html" title="HackTheBox - Administrator" />
-    <published>2025-10-11T13:00:00+02:00</published>
+    <published>2025-10-11T12:00:00+01:00</published>
   
-    <updated>2025-10-12T13:16:45+02:00</updated>
+    <updated>2025-10-12T12:16:45+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Administrator/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Administrator/" />
@@ -119,32 +145,6 @@
   
 
   <summary>Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>HackTheBox - Cap</title>
-    <link href="http://localhost:4000/posts/HackTheBox-Cap/" rel="alternate" type="text/html" title="HackTheBox - Cap" />
-    <published>2025-06-09T12:00:00+02:00</published>
-  
-    <updated>2025-10-12T11:48:13+02:00</updated>
-  
-    <id>http://localhost:4000/posts/HackTheBox-Cap/</id>
-    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Cap/" />
-    <author>
-      <name>sanity</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Writeup" />
-    
-  
-
-  <summary>Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges.</summary>
 
   </entry>
 

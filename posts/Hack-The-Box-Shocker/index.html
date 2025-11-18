@@ -38,16 +38,16 @@
 <link rel="canonical" href="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
 <meta property="og:url" content="http://localhost:4000/posts/Hack-The-Box-Shocker/" />
 <meta property="og:site_name" content="Sanity-Archive" />
-<meta property="og:image" content="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png" />
+<meta property="og:image" content="http://localhost:4000/post-images/shellshock/avatar.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-04-19T13:00:00+02:00" />
+<meta property="article:published_time" content="2025-04-19T12:00:00+01:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png" />
+<meta property="twitter:image" content="http://localhost:4000/post-images/shellshock/avatar.png" />
 <meta property="twitter:title" content="HackTheBox - Shocker" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@S4nity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-16T13:45:14+02:00","datePublished":"2025-04-19T13:00:00+02:00","description":"Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.","headline":"HackTheBox - Shocker","image":"https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Hack-The-Box-Shocker/"},"url":"http://localhost:4000/posts/Hack-The-Box-Shocker/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"S4nity","url":"https://sanity-archive.github.io/"},"dateModified":"2025-10-16T12:45:14+01:00","datePublished":"2025-04-19T12:00:00+01:00","description":"Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges.","headline":"HackTheBox - Shocker","image":"http://localhost:4000/post-images/shellshock/avatar.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Hack-The-Box-Shocker/"},"url":"http://localhost:4000/posts/Hack-The-Box-Shocker/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -881,7 +881,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png" class="popup img-link preview-img shimmer"><img src="https://labs.hackthebox.com/storage/avatars/efef52a0fb63d9c8db0ab6e50cb6ac79.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+          <a href="/post-images/shellshock/avatar.png" class="popup img-link preview-img shimmer"><img src="/post-images/shellshock/avatar.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -1339,6 +1339,20 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/HackTheBox-POV/">HackTheBox - POV</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/HackTheBox-Builder/">HackTheBox - Builder</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Hack-The-Box-Shocker/">HackTheBox - Shocker</a>
         </li>
       
@@ -1354,20 +1368,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         
         <li class="text-truncate lh-lg">
           <a href="/posts/HackTheBox-Validation/">HackTheBox - Validation</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/HackTheBox-Redelegate/">HackTheBox - Redelegate</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/HackTheBox-Builder/">HackTheBox - Builder</a>
         </li>
       
     </ul>
@@ -1441,6 +1441,127 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1515,31 +1636,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1599,11 +1695,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -1725,6 +1816,66 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1767,46 +1918,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
       
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -1830,16 +1941,19 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         <a class="post-tag btn btn-outline-primary" href="/tags/web-attacks/">web-attacks</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cve/">cve</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/windows/">windows</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active directory</a>
@@ -1849,9 +1963,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
       
     </div>
   </section>
@@ -1912,6 +2023,18 @@ lxc <span class="nb">exec </span>r00t /bin/sh
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2067,11 +2190,11 @@ lxc <span class="nb">exec </span>r00t /bin/sh
 
 <time
   
-  data-ts="1760353200"
+  data-ts="1760526000"
   data-df="ll"
   
 >
-  Oct 13, 2025
+  Oct 15, 2025
 </time>
 
               <h4 class="pt-0 my-2">HackTheBox - Builder</h4>
@@ -2224,6 +2347,127 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2298,31 +2542,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2382,11 +2601,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -2508,6 +2722,66 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2550,46 +2824,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
     
     
       
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -2613,16 +2847,19 @@ lxc <span class="nb">exec </span>r00t /bin/sh
         <a class="post-tag btn btn-outline-primary" href="/tags/web-attacks/">web-attacks</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/easy/">easy</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/priv-esc/">priv-esc</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cve/">cve</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/medium/">medium</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/windows/">windows</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">active directory</a>
@@ -2632,9 +2869,6 @@ lxc <span class="nb">exec </span>r00t /bin/sh
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cgi/">cgi</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/guide/">guide</a>
       
     </div>
   </section>

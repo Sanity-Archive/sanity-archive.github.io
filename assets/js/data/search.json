@@ -1,10 +1,18 @@
 [
   {
+    "title": "HackTheBox - POV",
+    "url": "/posts/HackTheBox-POV/",
+    "categories": "Blogging, Writeup",
+    "tags": "windows, medium, web-attacks, priv-esc, SeDebug, PScredential, LFI",
+    "date": "2025-11-15 12:00:00 +0100",
+    "content": "POV is a medium difficulty Linux machine, that requires us to find a second VHost, which we can exploit with LFI and a deserialization attack to gain a foothold. To escalate our privileges we have ..."
+  },
+  {
     "title": "HackTheBox - Builder",
     "url": "/posts/HackTheBox-Builder/",
     "categories": "Blogging, Writeup",
     "tags": "linux, medium, jenkins, cve, web-attacks",
-    "date": "2025-10-13 13:00:00 +0200",
+    "date": "2025-10-15 12:00:00 +0100",
     "content": "Builder is a medium difficulty Linux machine, that requires us to exploit CVE-2024-23897 to gain a foothold. After gaining a foothold we are able to extract credentials for Jenkis, which allows us ..."
   },
   {
@@ -12,7 +20,7 @@
     "url": "/posts/HackTheBox-Redelegate/",
     "categories": "Blogging, Writeup",
     "tags": "linux, hard, active-directory, ms-sql, sql",
-    "date": "2025-10-13 13:00:00 +0200",
+    "date": "2025-10-13 12:00:00 +0100",
     "content": "Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user..."
   },
   {
@@ -20,7 +28,7 @@
     "url": "/posts/HackTheBox-Validation/",
     "categories": "Blogging, Writeup",
     "tags": "linux, easy, web-attacks, sql-injection, priv-esc",
-    "date": "2025-10-12 13:00:00 +0200",
+    "date": "2025-10-12 12:00:00 +0100",
     "content": "Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check f..."
   },
   {
@@ -28,7 +36,7 @@
     "url": "/posts/HackTheBox-Administrator/",
     "categories": "Blogging, Writeup",
     "tags": "windows, medium, active directory",
-    "date": "2025-10-11 13:00:00 +0200",
+    "date": "2025-10-11 12:00:00 +0100",
     "content": "Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to rece..."
   },
   {
@@ -36,7 +44,7 @@
     "url": "/posts/HackTheBox-Cap/",
     "categories": "Blogging, Writeup",
     "tags": "linux, easy, web-attacks, priv-esc, IDOR, python3",
-    "date": "2025-06-09 12:00:00 +0200",
+    "date": "2025-06-09 11:00:00 +0100",
     "content": "Cap is an easy Linux machine that requires us to abuse an IDOR vulnerability to gain credentials. After gaining a foothold we abuse a capability to escalate our privileges."
   },
   {
@@ -44,7 +52,7 @@
     "url": "/posts/Interactive-Shell-Guide/",
     "categories": "Blogging, Guide",
     "tags": "reverse-shell, guide, quick-guide",
-    "date": "2025-04-20 13:00:00 +0200",
+    "date": "2025-04-20 12:00:00 +0100",
     "content": "This guide explains what an interactive shell is and how you can get it running."
   },
   {
@@ -52,7 +60,7 @@
     "url": "/posts/Hack-The-Box-Shocker/",
     "categories": "Blogging, Writeup",
     "tags": "linux, easy, web-attacks, cgi, priv-esc, cve",
-    "date": "2025-04-19 13:00:00 +0200",
+    "date": "2025-04-19 12:00:00 +0100",
     "content": "Shocker is an easy Linux machine that requires us to attack a website vulnerable to Shellshock (CVE-2014-6271). After gaining a foothold, we notice multiple ways to escalate our privileges."
   }
   
