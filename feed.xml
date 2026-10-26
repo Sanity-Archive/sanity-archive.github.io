@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2025-11-18T17:08:43+01:00</updated>
+  <updated>2026-10-26T08:22:26+01:00</updated>
   <author>
     <name>S4nity</name>
     <uri>http://localhost:4000/</uri>
@@ -13,7 +13,7 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
-  <rights> © 2025 S4nity </rights>
+  <rights> © 2026 S4nity </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -50,7 +50,7 @@
     <link href="http://localhost:4000/posts/HackTheBox-Builder/" rel="alternate" type="text/html" title="HackTheBox - Builder" />
     <published>2025-10-15T12:00:00+01:00</published>
   
-    <updated>2025-10-16T12:54:07+01:00</updated>
+    <updated>2025-11-18T17:08:56+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Builder/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Builder/" />
@@ -76,7 +76,7 @@
     <link href="http://localhost:4000/posts/HackTheBox-Redelegate/" rel="alternate" type="text/html" title="HackTheBox - Redelegate" />
     <published>2025-10-13T12:00:00+01:00</published>
   
-    <updated>2025-10-13T12:00:00+01:00</updated>
+    <updated>2025-11-18T17:08:56+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Redelegate/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Redelegate/" />
@@ -102,7 +102,7 @@
     <link href="http://localhost:4000/posts/HackTheBox-Validation/" rel="alternate" type="text/html" title="HackTheBox - Validation" />
     <published>2025-10-12T12:00:00+01:00</published>
   
-    <updated>2025-10-14T13:48:06+01:00</updated>
+    <updated>2025-11-18T17:08:56+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Validation/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Validation/" />
@@ -128,7 +128,7 @@
     <link href="http://localhost:4000/posts/HackTheBox-Administrator/" rel="alternate" type="text/html" title="HackTheBox - Administrator" />
     <published>2025-10-11T12:00:00+01:00</published>
   
-    <updated>2025-10-12T12:16:45+01:00</updated>
+    <updated>2025-11-18T17:08:56+01:00</updated>
   
     <id>http://localhost:4000/posts/HackTheBox-Administrator/</id>
     <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Administrator/" />
