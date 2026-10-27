@@ -1,5 +1,13 @@
 [
   {
+    "title": "HackTheBox - Delegate",
+    "url": "/posts/HackTheBox-Delegate/",
+    "categories": "Blogging, Writeup",
+    "tags": "windows, medium, active-directory, priv-esc, delegation, ldap, smb",
+    "date": "2026-10-27 00:00:00 +0100",
+    "content": "Delegate is a medium difficulty Windows machine, that requires us to abuse SMB guest access to steal credentials. Further enumeration reveals that the user has GenericWrite privileges over another ..."
+  },
+  {
     "title": "HackTheBox - POV",
     "url": "/posts/HackTheBox-POV/",
     "categories": "Blogging, Writeup",
@@ -19,7 +27,7 @@
     "title": "HackTheBox - Redelegate",
     "url": "/posts/HackTheBox-Redelegate/",
     "categories": "Blogging, Writeup",
-    "tags": "linux, hard, active-directory, ms-sql, sql",
+    "tags": "windows, hard, active-directory, ms-sql, sql, delegation",
     "date": "2025-10-13 12:00:00 +0100",
     "content": "Redelegate is a hard Windows machine, that requires us to crack a password vault, which allows us to gain access to a SQL-server. The SQL-server allows us to bruteforce user RIDs to generate a user..."
   },

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sanity-Archive</title>
   <subtitle>Website for CTF, Pentesting and Redteaming topics, where I will post writeups, guides and my personal progress.</subtitle>
-  <updated>2026-10-26T08:22:26+01:00</updated>
+  <updated>2026-10-27T13:08:19+01:00</updated>
   <author>
     <name>S4nity</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HackTheBox - Delegate</title>
+    <link href="http://localhost:4000/posts/HackTheBox-Delegate/" rel="alternate" type="text/html" title="HackTheBox - Delegate" />
+    <published>2026-10-27T00:00:00+01:00</published>
+  
+    <updated>2026-10-27T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/HackTheBox-Delegate/</id>
+    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Delegate/" />
+    <author>
+      <name>sanity</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Writeup" />
+    
+  
+
+  <summary>Delegate is a medium difficulty Windows machine, that requires us to abuse SMB guest access to steal credentials. Further enumeration reveals that the user has GenericWrite privileges over another user, who has SeEnableDelegationPrivilege and SeMachineAccountPrivilege enabled, which we can abuse to escalate our privileges.</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>Validation is an easy Linux machine, where we have to exploit a SQL-injection vulnerability to get a foothold. Enumerating the system reveals, that only root can login to the machine. So we check for password re-use with the credentials of the database to gain access to the root account.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>HackTheBox - Administrator</title>
-    <link href="http://localhost:4000/posts/HackTheBox-Administrator/" rel="alternate" type="text/html" title="HackTheBox - Administrator" />
-    <published>2025-10-11T12:00:00+01:00</published>
-  
-    <updated>2025-11-18T17:08:56+01:00</updated>
-  
-    <id>http://localhost:4000/posts/HackTheBox-Administrator/</id>
-    <content type="text/html" src="http://localhost:4000/posts/HackTheBox-Administrator/" />
-    <author>
-      <name>sanity</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Writeup" />
-    
-  
-
-  <summary>Administrator is a medium difficulty Windows machine that requires us to jump between multiple user accounts. After gaining access to a certain user account, we can execute a DC-sync attack to receive the administrator password hash.</summary>
 
   </entry>
 
