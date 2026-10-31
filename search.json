@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "HackTheBox - Soccer",
+      "category" : "",
+      "tags"     : "linux, web-attacks, priv-esc",
+      "url"      : "/posts/HackTheBox-Soccer/",
+      "date"     : "2026-10-31 00:00:00 +0100"
+    } ,
+  
+    {
       "title"    : "HackTheBox - Delegate",
       "category" : "",
       "tags"     : "windows, medium, active-directory, priv-esc, delegation, ldap, smb",

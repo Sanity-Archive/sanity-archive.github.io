@@ -1,5 +1,13 @@
 [
   {
+    "title": "HackTheBox - Soccer",
+    "url": "/posts/HackTheBox-Soccer/",
+    "categories": "Blogging, Writeup",
+    "tags": "linux, web-attacks, priv-esc",
+    "date": "2026-10-31 00:00:00 +0100",
+    "content": "Soccer is an &quot;easy&quot; difficulty machine, that requires us exploit a known CVE of a file manager. This leads to RCE, which we use to find a second website. The second website is vulnerable to SQLi. T..."
+  },
+  {
     "title": "HackTheBox - Delegate",
     "url": "/posts/HackTheBox-Delegate/",
     "categories": "Blogging, Writeup",
